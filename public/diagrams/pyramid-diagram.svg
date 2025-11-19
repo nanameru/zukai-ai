@@ -1,0 +1,50 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pyramid1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pyramid2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#818CF8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pyramid3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#818CF8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pyramid4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A78BFA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C4B5FD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Level 4: Bottom (Widest) -->
+  <path d="M 50 450 L 450 450 L 400 380 L 100 380 Z" fill="url(#pyramid4)" stroke="#312E81" stroke-width="2"/>
+  <text x="250" y="420" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">基盤層</text>
+  <text x="250" y="440" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Foundation</text>
+  <text x="250" y="460" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11">データ・インフラ</text>
+  
+  <!-- Level 3 -->
+  <path d="M 100 380 L 400 380 L 350 310 L 150 310 Z" fill="url(#pyramid3)" stroke="#312E81" stroke-width="2"/>
+  <text x="250" y="350" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">機能層</text>
+  <text x="250" y="370" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Features</text>
+  <text x="250" y="385" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11">コア機能・API</text>
+  
+  <!-- Level 2 -->
+  <path d="M 150 310 L 350 310 L 300 240 L 200 240 Z" fill="url(#pyramid2)" stroke="#312E81" stroke-width="2"/>
+  <text x="250" y="280" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">サービス層</text>
+  <text x="250" y="300" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Services</text>
+  <text x="250" y="315" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11">ビジネスロジック</text>
+  
+  <!-- Level 1: Top (Narrowest) -->
+  <path d="M 200 240 L 300 240 L 250 170 Z" fill="url(#pyramid1)" stroke="#312E81" stroke-width="2"/>
+  <text x="250" y="210" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">プレゼン層</text>
+  <text x="250" y="230" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Presentation</text>
+  <text x="250" y="245" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11">UI・UX</text>
+  
+  <!-- Title -->
+  <text x="250" y="30" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="18" font-weight="bold">システム階層図</text>
+  
+  <!-- Description -->
+  <text x="250" y="480" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="12">アーキテクチャの階層構造</text>
+</svg>

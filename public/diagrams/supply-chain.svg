@@ -1,0 +1,58 @@
+<svg width="700" height="350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="supplyArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#6366F1" />
+    </marker>
+  </defs>
+  
+  <!-- Supplier -->
+  <rect x="50" y="120" width="120" height="80" rx="10" fill="#4F46E5" stroke="#312E81" stroke-width="2"/>
+  <text x="110" y="150" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">サプライヤー</text>
+  <text x="110" y="170" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Supplier</text>
+  <text x="110" y="190" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">原材料調達</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="170" y1="160" x2="220" y2="160" stroke="#6366F1" stroke-width="3" marker-end="url(#supplyArrow)"/>
+  
+  <!-- Manufacturer -->
+  <rect x="220" y="120" width="120" height="80" rx="10" fill="#6366F1" stroke="#312E81" stroke-width="2"/>
+  <text x="280" y="150" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">製造業者</text>
+  <text x="280" y="170" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Manufacturer</text>
+  <text x="280" y="190" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">生産・加工</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="340" y1="160" x2="390" y2="160" stroke="#6366F1" stroke-width="3" marker-end="url(#supplyArrow)"/>
+  
+  <!-- Distributor -->
+  <rect x="390" y="120" width="120" height="80" rx="10" fill="#818CF8" stroke="#312E81" stroke-width="2"/>
+  <text x="450" y="150" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">卸売業者</text>
+  <text x="450" y="170" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Distributor</text>
+  <text x="450" y="190" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">在庫管理</text>
+  
+  <!-- Arrow 3 -->
+  <line x1="510" y1="160" x2="560" y2="160" stroke="#6366F1" stroke-width="3" marker-end="url(#supplyArrow)"/>
+  
+  <!-- Retailer -->
+  <rect x="560" y="120" width="120" height="80" rx="10" fill="#A78BFA" stroke="#312E81" stroke-width="2"/>
+  <text x="620" y="150" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">小売業者</text>
+  <text x="620" y="170" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Retailer</text>
+  <text x="620" y="190" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">販売・マーケ</text>
+  
+  <!-- Customer (below) -->
+  <circle cx="350" cy="280" r="50" fill="#10B981" stroke="white" stroke-width="3"/>
+  <text x="350" y="270" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">顧客</text>
+  <text x="350" y="290" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Customer</text>
+  
+  <!-- Arrows to customer -->
+  <line x1="280" y1="200" x2="330" y2="250" stroke="#10B981" stroke-width="2" marker-end="url(#supplyArrow)"/>
+  <line x1="450" y1="200" x2="370" y2="250" stroke="#10B981" stroke-width="2" marker-end="url(#supplyArrow)"/>
+  <line x1="620" y1="200" x2="370" y2="250" stroke="#10B981" stroke-width="2" marker-end="url(#supplyArrow)"/>
+  
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="18" font-weight="bold">サプライチェーン</text>
+  
+  <!-- Flow labels -->
+  <text x="195" y="155" text-anchor="middle" fill="#6366F1" font-family="Arial, sans-serif" font-size="10">原材料</text>
+  <text x="365" y="155" text-anchor="middle" fill="#6366F1" font-family="Arial, sans-serif" font-size="10">製品</text>
+  <text x="535" y="155" text-anchor="middle" fill="#6366F1" font-family="Arial, sans-serif" font-size="10">商品</text>
+</svg>

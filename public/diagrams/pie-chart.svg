@@ -1,0 +1,57 @@
+<svg width="500" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Pie chart slices -->
+  <!-- Slice 1: 35% -->
+  <path d="M 200 150 L 200 50 A 100 100 0 0 1 270.71 79.29 Z" 
+        fill="#4F46E5" filter="url(#shadow)"/>
+  <text x="230" y="60" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">35%</text>
+  
+  <!-- Slice 2: 25% -->
+  <path d="M 200 150 L 270.71 79.29 A 100 100 0 0 1 300 150 Z" 
+        fill="#6366F1" filter="url(#shadow)"/>
+  <text x="285" y="120" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">25%</text>
+  
+  <!-- Slice 3: 20% -->
+  <path d="M 200 150 L 300 150 A 100 100 0 0 1 270.71 220.71 Z" 
+        fill="#818CF8" filter="url(#shadow)"/>
+  <text x="285" y="200" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">20%</text>
+  
+  <!-- Slice 4: 15% -->
+  <path d="M 200 150 L 270.71 220.71 A 100 100 0 0 1 200 250 Z" 
+        fill="#A78BFA" filter="url(#shadow)"/>
+  <text x="220" y="240" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">15%</text>
+  
+  <!-- Slice 5: 5% -->
+  <path d="M 200 150 L 200 250 A 100 100 0 0 1 129.29 220.71 Z" 
+        fill="#C4B5FD" filter="url(#shadow)"/>
+  <text x="150" y="240" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">5%</text>
+  
+  <!-- Center circle -->
+  <circle cx="200" cy="150" r="50" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="200" y="145" text-anchor="middle" fill="#312E81" font-family="Arial, sans-serif" font-size="16" font-weight="bold">合計</text>
+  <text x="200" y="160" text-anchor="middle" fill="#312E81" font-family="Arial, sans-serif" font-size="14">100%</text>
+  
+  <!-- Legend -->
+  <rect x="350" y="80" width="20" height="20" fill="#4F46E5" rx="3"/>
+  <text x="380" y="95" fill="#1F2937" font-family="Arial, sans-serif" font-size="12">カテゴリA (35%)</text>
+  
+  <rect x="350" y="120" width="20" height="20" fill="#6366F1" rx="3"/>
+  <text x="380" y="135" fill="#1F2937" font-family="Arial, sans-serif" font-size="12">カテゴリB (25%)</text>
+  
+  <rect x="350" y="160" width="20" height="20" fill="#818CF8" rx="3"/>
+  <text x="380" y="175" fill="#1F2937" font-family="Arial, sans-serif" font-size="12">カテゴリC (20%)</text>
+  
+  <rect x="350" y="200" width="20" height="20" fill="#A78BFA" rx="3"/>
+  <text x="380" y="215" fill="#1F2937" font-family="Arial, sans-serif" font-size="12">カテゴリD (15%)</text>
+  
+  <rect x="350" y="240" width="20" height="20" fill="#C4B5FD" rx="3"/>
+  <text x="380" y="255" fill="#1F2937" font-family="Arial, sans-serif" font-size="12">その他 (5%)</text>
+  
+  <!-- Title -->
+  <text x="250" y="30" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="18" font-weight="bold">売上構成比</text>
+</svg>

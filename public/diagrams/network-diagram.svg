@@ -1,0 +1,75 @@
+<svg width="600" height="450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#6366F1" />
+    </marker>
+  </defs>
+  
+  <!-- Central node -->
+  <circle cx="300" cy="225" r="50" fill="#4F46E5" stroke="white" stroke-width="4"/>
+  <text x="300" y="220" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">中央</text>
+  <text x="300" y="240" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Hub</text>
+  
+  <!-- Node 1: Top -->
+  <circle cx="300" cy="80" r="40" fill="#6366F1" stroke="white" stroke-width="3"/>
+  <text x="300" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ノード1</text>
+  <line x1="300" y1="120" x2="300" y2="175" stroke="#818CF8" stroke-width="3" marker-end="url(#arrow)"/>
+  
+  <!-- Node 2: Top Right -->
+  <circle cx="450" cy="120" r="40" fill="#818CF8" stroke="white" stroke-width="3"/>
+  <text x="450" y="125" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ノード2</text>
+  <line x1="410" y1="140" x2="250" y2="200" stroke="#A78BFA" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Node 3: Right -->
+  <circle cx="500" cy="225" r="40" fill="#A78BFA" stroke="white" stroke-width="3"/>
+  <text x="500" y="230" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ノード3</text>
+  <line x1="460" y1="225" x2="350" y2="225" stroke="#C4B5FD" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Node 4: Bottom Right -->
+  <circle cx="450" cy="330" r="40" fill="#C4B5FD" stroke="white" stroke-width="3"/>
+  <text x="450" y="335" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ノード4</text>
+  <line x1="410" y1="310" x2="250" y2="250" stroke="#A78BFA" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Node 5: Bottom -->
+  <circle cx="300" cy="370" r="40" fill="#818CF8" stroke="white" stroke-width="3"/>
+  <text x="300" y="375" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ノード5</text>
+  <line x1="300" y1="275" x2="300" y2="330" stroke="#6366F1" stroke-width="3" marker-end="url(#arrow)"/>
+  
+  <!-- Node 6: Bottom Left -->
+  <circle cx="150" cy="330" r="40" fill="#6366F1" stroke="white" stroke-width="3"/>
+  <text x="150" y="335" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ノード6</text>
+  <line x1="190" y1="310" x2="250" y2="250" stroke="#818CF8" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Node 7: Left -->
+  <circle cx="100" cy="225" r="40" fill="#4F46E5" stroke="white" stroke-width="3"/>
+  <text x="100" y="230" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ノード7</text>
+  <line x1="140" y1="225" x2="250" y2="225" stroke="#6366F1" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Node 8: Top Left -->
+  <circle cx="150" cy="120" r="40" fill="#6366F1" stroke="white" stroke-width="3"/>
+  <text x="150" y="125" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ノード8</text>
+  <line x1="190" y1="140" x2="250" y2="200" stroke="#818CF8" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Connection between nodes -->
+  <line x1="300" y1="80" x2="450" y2="120" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="450" y1="120" x2="500" y2="225" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="500" y1="225" x2="450" y2="330" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="450" y1="330" x2="300" y2="370" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="300" y1="370" x2="150" y2="330" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="150" y1="330" x2="100" y2="225" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="100" y1="225" x2="150" y2="120" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="150" y1="120" x2="300" y2="80" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="18" font-weight="bold">ネットワーク構造図</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="400" width="15" height="15" fill="#4F46E5" rx="3"/>
+  <text x="75" y="412" fill="#1F2937" font-family="Arial, sans-serif" font-size="11">中央ハブ</text>
+  
+  <rect x="150" y="400" width="15" height="15" fill="#6366F1" rx="3"/>
+  <text x="175" y="412" fill="#1F2937" font-family="Arial, sans-serif" font-size="11">接続ノード</text>
+  
+  <rect x="280" y="400" width="15" height="15" fill="#818CF8" rx="3"/>
+  <text x="305" y="412" fill="#1F2937" font-family="Arial, sans-serif" font-size="11">双方向接続</text>
+</svg>

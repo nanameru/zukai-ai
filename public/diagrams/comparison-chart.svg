@@ -1,0 +1,66 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="leftGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="rightGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34D399;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Divider line -->
+  <line x1="300" y1="80" x2="300" y2="350" stroke="#6B7280" stroke-width="3" stroke-dasharray="5,5"/>
+  
+  <!-- Left side: Option A -->
+  <rect x="80" y="100" width="200" height="200" rx="10" fill="url(#leftGrad)" stroke="#312E81" stroke-width="2"/>
+  <text x="180" y="140" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">オプションA</text>
+  <text x="180" y="165" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14">Option A</text>
+  
+  <!-- Features for Option A -->
+  <circle cx="120" cy="200" r="5" fill="white"/>
+  <text x="140" y="205" fill="white" font-family="Arial, sans-serif" font-size="12">特徴1: 高品質</text>
+  
+  <circle cx="120" cy="230" r="5" fill="white"/>
+  <text x="140" y="235" fill="white" font-family="Arial, sans-serif" font-size="12">特徴2: 高コスト</text>
+  
+  <circle cx="120" cy="260" r="5" fill="white"/>
+  <text x="140" y="265" fill="white" font-family="Arial, sans-serif" font-size="12">特徴3: 長期サポート</text>
+  
+  <!-- Price for Option A -->
+  <rect x="100" y="280" width="160" height="15" rx="5" fill="white" opacity="0.9"/>
+  <text x="180" y="291" text-anchor="middle" fill="#312E81" font-family="Arial, sans-serif" font-size="11" font-weight="bold">¥100,000/月</text>
+  
+  <!-- Right side: Option B -->
+  <rect x="320" y="100" width="200" height="200" rx="10" fill="url(#rightGrad)" stroke="#065F46" stroke-width="2"/>
+  <text x="420" y="140" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">オプションB</text>
+  <text x="420" y="165" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14">Option B</text>
+  
+  <!-- Features for Option B -->
+  <circle cx="360" cy="200" r="5" fill="white"/>
+  <text x="380" y="205" fill="white" font-family="Arial, sans-serif" font-size="12">特徴1: 標準品質</text>
+  
+  <circle cx="360" cy="230" r="5" fill="white"/>
+  <text x="380" y="235" fill="white" font-family="Arial, sans-serif" font-size="12">特徴2: 低コスト</text>
+  
+  <circle cx="360" cy="260" r="5" fill="white"/>
+  <text x="380" y="265" fill="white" font-family="Arial, sans-serif" font-size="12">特徴3: 基本サポート</text>
+  
+  <!-- Price for Option B -->
+  <rect x="340" y="280" width="160" height="15" rx="5" fill="white" opacity="0.9"/>
+  <text x="420" y="291" text-anchor="middle" fill="#065F46" font-family="Arial, sans-serif" font-size="11" font-weight="bold">¥50,000/月</text>
+  
+  <!-- Comparison metrics -->
+  <text x="300" y="330" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="12" font-weight="bold">比較項目</text>
+  
+  <text x="150" y="355" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="11">品質: ★★★★★</text>
+  <text x="450" y="355" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="11">品質: ★★★☆☆</text>
+  
+  <text x="150" y="375" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="11">コスト: 高</text>
+  <text x="450" y="375" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="11">コスト: 低</text>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="18" font-weight="bold">オプション比較</text>
+  <text x="300" y="50" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="12">2つの選択肢の比較</text>
+</svg>

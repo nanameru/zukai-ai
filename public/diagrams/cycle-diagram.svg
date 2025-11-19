@@ -1,0 +1,48 @@
+<svg width="550" height="550" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="cycleArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#6366F1" />
+    </marker>
+  </defs>
+  
+  <!-- Center circle -->
+  <circle cx="275" cy="275" r="60" fill="#4F46E5" stroke="white" stroke-width="4"/>
+  <text x="275" y="270" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">サイクル</text>
+  <text x="275" y="290" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14">Cycle</text>
+  
+  <!-- Step 1: Top -->
+  <circle cx="275" cy="120" r="50" fill="#6366F1" stroke="white" stroke-width="3"/>
+  <text x="275" y="135" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">計画</text>
+  <text x="275" y="155" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11">Plan</text>
+  <path d="M 275 170 Q 275 200 300 220" stroke="#818CF8" stroke-width="3" fill="none" marker-end="url(#cycleArrow)"/>
+  
+  <!-- Step 2: Right -->
+  <circle cx="430" cy="275" r="50" fill="#818CF8" stroke="white" stroke-width="3"/>
+  <text x="430" y="290" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">実行</text>
+  <text x="430" y="310" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11">Do</text>
+  <path d="M 380 275 Q 350 275 350 300" stroke="#A78BFA" stroke-width="3" fill="none" marker-end="url(#cycleArrow)"/>
+  
+  <!-- Step 3: Bottom -->
+  <circle cx="275" cy="430" r="50" fill="#A78BFA" stroke="white" stroke-width="3"/>
+  <text x="275" y="445" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">確認</text>
+  <text x="275" y="465" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11">Check</text>
+  <path d="M 275 380 Q 275 350 250 330" stroke="#C4B5FD" stroke-width="3" fill="none" marker-end="url(#cycleArrow)"/>
+  
+  <!-- Step 4: Left -->
+  <circle cx="120" cy="275" r="50" fill="#C4B5FD" stroke="white" stroke-width="3"/>
+  <text x="120" y="290" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">改善</text>
+  <text x="120" y="310" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11">Act</text>
+  <path d="M 170 275 Q 200 275 200 250" stroke="#6366F1" stroke-width="3" fill="none" marker-end="url(#cycleArrow)"/>
+  
+  <!-- Connection to center -->
+  <line x1="275" y1="170" x2="275" y2="215" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="3,3"/>
+  <line x1="380" y1="275" x2="335" y2="275" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="3,3"/>
+  <line x1="275" y1="380" x2="275" y2="335" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="3,3"/>
+  <line x1="170" y1="275" x2="215" y2="275" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="3,3"/>
+  
+  <!-- Title -->
+  <text x="275" y="30" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="18" font-weight="bold">PDCAサイクル</text>
+  
+  <!-- Description -->
+  <text x="275" y="520" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="12">継続的な改善プロセス</text>
+</svg>

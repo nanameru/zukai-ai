@@ -1,0 +1,66 @@
+<svg width="700" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Y-axis -->
+  <line x1="120" y1="50" x2="120" y2="350" stroke="#6B7280" stroke-width="2"/>
+  
+  <!-- X-axis -->
+  <line x1="120" y1="350" x2="650" y2="350" stroke="#6B7280" stroke-width="2"/>
+  
+  <!-- Month labels -->
+  <text x="170" y="345" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="11">1月</text>
+  <text x="270" y="345" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="11">2月</text>
+  <text x="370" y="345" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="11">3月</text>
+  <text x="470" y="345" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="11">4月</text>
+  <text x="570" y="345" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="11">5月</text>
+  
+  <!-- Grid lines -->
+  <line x1="170" y1="50" x2="170" y2="350" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="270" y1="50" x2="270" y2="350" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="370" y1="50" x2="370" y2="350" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="470" y1="50" x2="470" y2="350" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="570" y1="50" x2="570" y2="350" stroke="#E5E7EB" stroke-width="1"/>
+  
+  <!-- Task labels -->
+  <text x="115" y="100" text-anchor="end" fill="#1F2937" font-family="Arial, sans-serif" font-size="12">タスクA</text>
+  <text x="115" y="150" text-anchor="end" fill="#1F2937" font-family="Arial, sans-serif" font-size="12">タスクB</text>
+  <text x="115" y="200" text-anchor="end" fill="#1F2937" font-family="Arial, sans-serif" font-size="12">タスクC</text>
+  <text x="115" y="250" text-anchor="end" fill="#1F2937" font-family="Arial, sans-serif" font-size="12">タスクD</text>
+  <text x="115" y="300" text-anchor="end" fill="#1F2937" font-family="Arial, sans-serif" font-size="12">タスクE</text>
+  
+  <!-- Task bars -->
+  <!-- Task A: Jan - Feb -->
+  <rect x="130" y="85" width="100" height="20" rx="4" fill="#4F46E5"/>
+  <text x="180" y="98" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">1-2月</text>
+  
+  <!-- Task B: Feb - Mar -->
+  <rect x="230" y="135" width="100" height="20" rx="4" fill="#6366F1"/>
+  <text x="280" y="148" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">2-3月</text>
+  
+  <!-- Task C: Jan - Mar -->
+  <rect x="130" y="185" width="200" height="20" rx="4" fill="#818CF8"/>
+  <text x="230" y="198" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">1-3月</text>
+  
+  <!-- Task D: Mar - Apr -->
+  <rect x="330" y="235" width="100" height="20" rx="4" fill="#A78BFA"/>
+  <text x="380" y="248" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">3-4月</text>
+  
+  <!-- Task E: Apr - May -->
+  <rect x="430" y="285" width="100" height="20" rx="4" fill="#C4B5FD"/>
+  <text x="480" y="298" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">4-5月</text>
+  
+  <!-- Milestones -->
+  <polygon points="330,95 340,105 330,115 320,105" fill="#F59E0B" stroke="#D97706" stroke-width="2"/>
+  <text x="350" y="108" fill="#92400E" font-family="Arial, sans-serif" font-size="9" font-weight="bold">マイルストーン1</text>
+  
+  <polygon points="430,195 440,205 430,215 420,205" fill="#F59E0B" stroke="#D97706" stroke-width="2"/>
+  <text x="450" y="208" fill="#92400E" font-family="Arial, sans-serif" font-size="9" font-weight="bold">マイルストーン2</text>
+  
+  <!-- Title -->
+  <text x="385" y="30" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="18" font-weight="bold">ガントチャート</text>
+  
+  <!-- Legend -->
+  <rect x="130" y="320" width="15" height="15" fill="#4F46E5" rx="2"/>
+  <text x="155" y="332" fill="#1F2937" font-family="Arial, sans-serif" font-size="11">タスク</text>
+  
+  <polygon points="230,322 240,332 230,342 220,332" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
+  <text x="250" y="332" fill="#1F2937" font-family="Arial, sans-serif" font-size="11">マイルストーン</text>
+</svg>

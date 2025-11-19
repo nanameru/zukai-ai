@@ -1,0 +1,48 @@
+<svg width="600" height="350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Timeline line -->
+  <line x1="80" y1="200" x2="520" y2="200" stroke="#6366F1" stroke-width="4"/>
+  
+  <!-- Timeline points -->
+  <!-- Point 1 -->
+  <circle cx="120" cy="200" r="12" fill="#4F46E5" stroke="white" stroke-width="3"/>
+  <line x1="120" y1="200" x2="120" y2="80" stroke="#6366F1" stroke-width="2" stroke-dasharray="3,3"/>
+  <rect x="60" y="40" width="120" height="60" rx="8" fill="#4F46E5" stroke="#312E81" stroke-width="2"/>
+  <text x="120" y="65" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">2024 Q1</text>
+  <text x="120" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">プロジェクト開始</text>
+  <text x="120" y="220" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="11" font-weight="bold">1月</text>
+  
+  <!-- Point 2 -->
+  <circle cx="220" cy="200" r="12" fill="#6366F1" stroke="white" stroke-width="3"/>
+  <line x1="220" y1="200" x2="220" y2="80" stroke="#6366F1" stroke-width="2" stroke-dasharray="3,3"/>
+  <rect x="160" y="40" width="120" height="60" rx="8" fill="#6366F1" stroke="#312E81" stroke-width="2"/>
+  <text x="220" y="65" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">2024 Q2</text>
+  <text x="220" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">MVPリリース</text>
+  <text x="220" y="220" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="11" font-weight="bold">4月</text>
+  
+  <!-- Point 3 -->
+  <circle cx="320" cy="200" r="12" fill="#818CF8" stroke="white" stroke-width="3"/>
+  <line x1="320" y1="200" x2="320" y2="80" stroke="#6366F1" stroke-width="2" stroke-dasharray="3,3"/>
+  <rect x="260" y="40" width="120" height="60" rx="8" fill="#818CF8" stroke="#312E81" stroke-width="2"/>
+  <text x="320" y="65" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">2024 Q3</text>
+  <text x="320" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">機能拡張</text>
+  <text x="320" y="220" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="11" font-weight="bold">7月</text>
+  
+  <!-- Point 4 -->
+  <circle cx="420" cy="200" r="12" fill="#A78BFA" stroke="white" stroke-width="3"/>
+  <line x1="420" y1="200" x2="420" y2="80" stroke="#6366F1" stroke-width="2" stroke-dasharray="3,3"/>
+  <rect x="360" y="40" width="120" height="60" rx="8" fill="#A78BFA" stroke="#312E81" stroke-width="2"/>
+  <text x="420" y="65" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">2024 Q4</text>
+  <text x="420" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">本番展開</text>
+  <text x="420" y="220" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="11" font-weight="bold">10月</text>
+  
+  <!-- Point 5 (Future) -->
+  <circle cx="500" cy="200" r="12" fill="#C4B5FD" stroke="white" stroke-width="3" opacity="0.7"/>
+  <line x1="500" y1="200" x2="500" y2="250" stroke="#C4B5FD" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+  <rect x="440" y="260" width="120" height="60" rx="8" fill="#C4B5FD" stroke="#312E81" stroke-width="2" opacity="0.7"/>
+  <text x="500" y="285" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">2025 Q1</text>
+  <text x="500" y="305" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="10">次期計画</text>
+  <text x="500" y="220" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="11" font-weight="bold">1月</text>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="18" font-weight="bold">プロジェクトロードマップ</text>
+</svg>
