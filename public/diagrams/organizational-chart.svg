@@ -1,0 +1,58 @@
+<svg width="600" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Top Level -->
+  <rect x="250" y="20" width="100" height="60" rx="8" fill="url(#grad1)" stroke="#1E1B4B" stroke-width="2"/>
+  <text x="300" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">CEO</text>
+  <text x="300" y="60" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">経営層</text>
+  
+  <!-- Connection lines -->
+  <line x1="300" y1="80" x2="150" y2="140" stroke="#6366F1" stroke-width="2"/>
+  <line x1="300" y1="80" x2="300" y2="140" stroke="#6366F1" stroke-width="2"/>
+  <line x1="300" y1="80" x2="450" y2="140" stroke="#6366F1" stroke-width="2"/>
+  
+  <!-- Second Level -->
+  <rect x="100" y="140" width="100" height="60" rx="8" fill="url(#grad2)" stroke="#1E3A8A" stroke-width="2"/>
+  <text x="150" y="165" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">営業部</text>
+  <text x="150" y="180" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Sales</text>
+  
+  <rect x="250" y="140" width="100" height="60" rx="8" fill="url(#grad2)" stroke="#1E3A8A" stroke-width="2"/>
+  <text x="300" y="165" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">開発部</text>
+  <text x="300" y="180" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Development</text>
+  
+  <rect x="400" y="140" width="100" height="60" rx="8" fill="url(#grad2)" stroke="#1E3A8A" stroke-width="2"/>
+  <text x="450" y="165" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">人事部</text>
+  <text x="450" y="180" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">HR</text>
+  
+  <!-- Connection lines to third level -->
+  <line x1="150" y1="200" x2="100" y2="260" stroke="#6366F1" stroke-width="2"/>
+  <line x1="150" y1="200" x2="200" y2="260" stroke="#6366F1" stroke-width="2"/>
+  <line x1="300" y1="200" x2="250" y2="260" stroke="#6366F1" stroke-width="2"/>
+  <line x1="300" y1="200" x2="350" y2="260" stroke="#6366F1" stroke-width="2"/>
+  
+  <!-- Third Level -->
+  <rect x="50" y="260" width="100" height="60" rx="8" fill="#E0E7FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="100" y="285" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="11" font-weight="bold">国内営業</text>
+  <text x="100" y="300" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="9">Domestic</text>
+  
+  <rect x="150" y="260" width="100" height="60" rx="8" fill="#E0E7FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="200" y="285" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="11" font-weight="bold">海外営業</text>
+  <text x="200" y="300" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="9">International</text>
+  
+  <rect x="250" y="260" width="100" height="60" rx="8" fill="#E0E7FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="300" y="285" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="11" font-weight="bold">フロントエンド</text>
+  <text x="300" y="300" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="9">Frontend</text>
+  
+  <rect x="350" y="260" width="100" height="60" rx="8" fill="#E0E7FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="400" y="285" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="11" font-weight="bold">バックエンド</text>
+  <text x="400" y="300" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="9">Backend</text>
+</svg>

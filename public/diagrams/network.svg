@@ -1,0 +1,71 @@
+<svg width="600" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nodeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nodeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nodeGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nodeGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nodeGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DB2777;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Connections -->
+  <line x1="300" y1="100" x2="150" y2="200" stroke="#6366F1" stroke-width="2" opacity="0.6"/>
+  <line x1="300" y1="100" x2="450" y2="200" stroke="#6366F1" stroke-width="2" opacity="0.6"/>
+  <line x1="300" y1="100" x2="300" y2="250" stroke="#6366F1" stroke-width="2" opacity="0.6"/>
+  <line x1="150" y1="200" x2="100" y2="350" stroke="#6366F1" stroke-width="2" opacity="0.6"/>
+  <line x1="150" y1="200" x2="200" y2="350" stroke="#6366F1" stroke-width="2" opacity="0.6"/>
+  <line x1="450" y1="200" x2="400" y2="350" stroke="#6366F1" stroke-width="2" opacity="0.6"/>
+  <line x1="450" y1="200" x2="500" y2="350" stroke="#6366F1" stroke-width="2" opacity="0.6"/>
+  <line x1="300" y1="250" x2="300" y2="350" stroke="#6366F1" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Center Node -->
+  <circle cx="300" cy="100" r="45" fill="url(#nodeGrad1)" stroke="white" stroke-width="3"/>
+  <text x="300" y="95" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">本部</text>
+  <text x="300" y="110" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11">Head Office</text>
+  
+  <!-- Level 2 Nodes -->
+  <circle cx="150" cy="200" r="40" fill="url(#nodeGrad2)" stroke="white" stroke-width="3"/>
+  <text x="150" y="195" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">営業A</text>
+  <text x="150" y="208" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Sales A</text>
+  
+  <circle cx="450" cy="200" r="40" fill="url(#nodeGrad3)" stroke="white" stroke-width="3"/>
+  <text x="450" y="195" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">営業B</text>
+  <text x="450" y="208" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Sales B</text>
+  
+  <circle cx="300" cy="250" r="40" fill="url(#nodeGrad4)" stroke="white" stroke-width="3"/>
+  <text x="300" y="245" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">開発</text>
+  <text x="300" y="258" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Development</text>
+  
+  <!-- Level 3 Nodes -->
+  <circle cx="100" cy="350" r="35" fill="#E0E7FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="100" y="348" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="11" font-weight="bold">チーム1</text>
+  
+  <circle cx="200" cy="350" r="35" fill="#E0E7FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="200" y="348" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="11" font-weight="bold">チーム2</text>
+  
+  <circle cx="300" cy="350" r="35" fill="#E0E7FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="300" y="348" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="11" font-weight="bold">チーム3</text>
+  
+  <circle cx="400" cy="350" r="35" fill="#E0E7FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="400" y="348" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="11" font-weight="bold">チーム4</text>
+  
+  <circle cx="500" cy="350" r="35" fill="#E0E7FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="500" y="348" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="11" font-weight="bold">チーム5</text>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="16" font-weight="bold">組織ネットワーク図</text>
+</svg>

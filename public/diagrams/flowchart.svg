@@ -1,0 +1,72 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#6366F1" />
+    </marker>
+    <linearGradient id="flowGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="flowGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Start -->
+  <ellipse cx="300" cy="30" rx="60" ry="25" fill="url(#flowGrad1)" stroke="#1E3A8A" stroke-width="2"/>
+  <text x="300" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">開始</text>
+  
+  <!-- Arrow -->
+  <line x1="300" y1="55" x2="300" y2="80" stroke="#6366F1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Process 1 -->
+  <rect x="200" y="80" width="200" height="50" rx="8" fill="url(#flowGrad1)" stroke="#1E3A8A" stroke-width="2"/>
+  <text x="300" y="105" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">要件定義</text>
+  <text x="300" y="120" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Requirements</text>
+  
+  <!-- Arrow -->
+  <line x1="300" y1="130" x2="300" y2="155" stroke="#6366F1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Decision -->
+  <polygon points="300,155 350,185 300,215 250,185" fill="#FBBF24" stroke="#92400E" stroke-width="2"/>
+  <text x="300" y="185" text-anchor="middle" fill="#78350F" font-family="Arial, sans-serif" font-size="11" font-weight="bold">承認？</text>
+  
+  <!-- Yes Arrow -->
+  <line x1="350" y1="185" x2="400" y2="185" stroke="#10B981" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="375" y="180" text-anchor="middle" fill="#059669" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Yes</text>
+  
+  <!-- No Arrow -->
+  <line x1="250" y1="185" x2="200" y2="185" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="225" y="180" text-anchor="middle" fill="#DC2626" font-family="Arial, sans-serif" font-size="10" font-weight="bold">No</text>
+  
+  <!-- Process 2 (Yes path) -->
+  <rect x="350" y="155" width="100" height="60" rx="8" fill="url(#flowGrad2)" stroke="#065F46" stroke-width="2"/>
+  <text x="400" y="180" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold">実装</text>
+  <text x="400" y="195" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Implementation</text>
+  
+  <!-- Arrow from Process 2 -->
+  <line x1="400" y1="215" x2="400" y2="250" stroke="#10B981" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Process 3 (No path) -->
+  <rect x="100" y="155" width="100" height="60" rx="8" fill="#FEE2E2" stroke="#991B1B" stroke-width="2"/>
+  <text x="150" y="180" text-anchor="middle" fill="#7F1D1D" font-family="Arial, sans-serif" font-size="11" font-weight="bold">見直し</text>
+  <text x="150" y="195" text-anchor="middle" fill="#7F1D1D" font-family="Arial, sans-serif" font-size="10">Review</text>
+  
+  <!-- Arrow from Process 3 back -->
+  <line x1="150" y1="215" x2="150" y2="250" stroke="#EF4444" stroke-width="2"/>
+  <line x1="150" y1="250" x2="250" y2="250" stroke="#EF4444" stroke-width="2"/>
+  <line x1="250" y1="250" x2="250" y2="215" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Final Process -->
+  <rect x="350" y="250" width="100" height="50" rx="8" fill="url(#flowGrad2)" stroke="#065F46" stroke-width="2"/>
+  <text x="400" y="275" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">テスト</text>
+  <text x="400" y="290" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Testing</text>
+  
+  <!-- Arrow -->
+  <line x1="400" y1="300" x2="400" y2="330" stroke="#10B981" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- End -->
+  <ellipse cx="400" cy="350" rx="60" ry="25" fill="url(#flowGrad2)" stroke="#065F46" stroke-width="2"/>
+  <text x="400" y="355" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">完了</text>
+</svg>

@@ -1,0 +1,71 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="cycleArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#6366F1" />
+    </marker>
+    <linearGradient id="cycleGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cycleGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cycleGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cycleGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Circular arrows -->
+  <path d="M 250 100 Q 350 150 400 250 Q 350 350 250 400 Q 150 350 100 250 Q 150 150 250 100" 
+        fill="none" stroke="#E5E7EB" stroke-width="3" stroke-dasharray="8,4" opacity="0.3"/>
+  
+  <!-- Arrow 1: Top to Right -->
+  <path d="M 350 150 Q 375 200 400 250" 
+        fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#cycleArrow)"/>
+  
+  <!-- Arrow 2: Right to Bottom -->
+  <path d="M 400 250 Q 375 300 350 350" 
+        fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#cycleArrow)"/>
+  
+  <!-- Arrow 3: Bottom to Left -->
+  <path d="M 250 400 Q 200 375 150 350" 
+        fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#cycleArrow)"/>
+  
+  <!-- Arrow 4: Left to Top -->
+  <path d="M 100 250 Q 150 200 200 150" 
+        fill="none" stroke="#6366F1" stroke-width="3" marker-end="url(#cycleArrow)"/>
+  
+  <!-- Step 1: Plan -->
+  <circle cx="250" cy="100" r="50" fill="url(#cycleGrad1)" stroke="white" stroke-width="3"/>
+  <text x="250" y="95" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">計画</text>
+  <text x="250" y="110" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Plan</text>
+  
+  <!-- Step 2: Do -->
+  <circle cx="400" cy="250" r="50" fill="url(#cycleGrad2)" stroke="white" stroke-width="3"/>
+  <text x="400" y="245" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">実行</text>
+  <text x="400" y="260" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Do</text>
+  
+  <!-- Step 3: Check -->
+  <circle cx="250" cy="400" r="50" fill="url(#cycleGrad3)" stroke="white" stroke-width="3"/>
+  <text x="250" y="395" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">確認</text>
+  <text x="250" y="410" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Check</text>
+  
+  <!-- Step 4: Act -->
+  <circle cx="100" cy="250" r="50" fill="url(#cycleGrad4)" stroke="white" stroke-width="3"/>
+  <text x="100" y="245" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">改善</text>
+  <text x="100" y="260" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Act</text>
+  
+  <!-- Center -->
+  <circle cx="250" cy="250" r="30" fill="white" stroke="#6366F1" stroke-width="2"/>
+  <text x="250" y="245" text-anchor="middle" fill="#6366F1" font-family="Arial, sans-serif" font-size="12" font-weight="bold">PDCA</text>
+  <text x="250" y="258" text-anchor="middle" fill="#6366F1" font-family="Arial, sans-serif" font-size="10">サイクル</text>
+  
+  <!-- Title -->
+  <text x="250" y="30" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="16" font-weight="bold">PDCA改善サイクル</text>
+</svg>
