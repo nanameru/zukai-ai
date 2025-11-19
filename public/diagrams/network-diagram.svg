@@ -1,0 +1,79 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nodeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nodeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6D28D9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nodeGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <filter id="nodeShadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1F2937">ネットワーク図</text>
+  
+  <!-- Central node -->
+  <circle cx="400" cy="300" r="50" fill="url(#nodeGrad1)" filter="url(#nodeShadow)" stroke="white" stroke-width="3"/>
+  <text x="400" y="295" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">中央</text>
+  <text x="400" y="310" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">ハブ</text>
+  
+  <!-- Node 1 -->
+  <circle cx="200" cy="150" r="35" fill="url(#nodeGrad2)" filter="url(#nodeShadow)" stroke="white" stroke-width="2"/>
+  <text x="200" y="157" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">ノード1</text>
+  <line x1="400" y1="300" x2="220" y2="170" stroke="#6366F1" stroke-width="2"/>
+  
+  <!-- Node 2 -->
+  <circle cx="600" cy="150" r="35" fill="url(#nodeGrad2)" filter="url(#nodeShadow)" stroke="white" stroke-width="2"/>
+  <text x="600" y="157" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">ノード2</text>
+  <line x1="400" y1="300" x2="580" y2="170" stroke="#6366F1" stroke-width="2"/>
+  
+  <!-- Node 3 -->
+  <circle cx="200" cy="450" r="35" fill="url(#nodeGrad2)" filter="url(#nodeShadow)" stroke="white" stroke-width="2"/>
+  <text x="200" y="457" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">ノード3</text>
+  <line x1="400" y1="300" x2="220" y2="430" stroke="#6366F1" stroke-width="2"/>
+  
+  <!-- Node 4 -->
+  <circle cx="600" cy="450" r="35" fill="url(#nodeGrad2)" filter="url(#nodeShadow)" stroke="white" stroke-width="2"/>
+  <text x="600" y="457" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">ノード4</text>
+  <line x1="400" y1="300" x2="580" y2="430" stroke="#6366F1" stroke-width="2"/>
+  
+  <!-- Node 5 -->
+  <circle cx="100" cy="300" r="35" fill="url(#nodeGrad3)" filter="url(#nodeShadow)" stroke="white" stroke-width="2"/>
+  <text x="100" y="307" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">ノード5</text>
+  <line x1="400" y1="300" x2="135" y2="300" stroke="#10B981" stroke-width="2"/>
+  
+  <!-- Node 6 -->
+  <circle cx="700" cy="300" r="35" fill="url(#nodeGrad3)" filter="url(#nodeShadow)" stroke="white" stroke-width="2"/>
+  <text x="700" y="307" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">ノード6</text>
+  <line x1="400" y1="300" x2="665" y2="300" stroke="#10B981" stroke-width="2"/>
+  
+  <!-- Secondary connections -->
+  <line x1="200" y1="150" x2="600" y2="150" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="200" y1="450" x2="600" y2="450" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="200" y1="150" x2="200" y2="450" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="600" y1="150" x2="600" y2="450" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Legend -->
+  <rect x="50" y="520" width="20" height="20" fill="url(#nodeGrad1)"/>
+  <text x="80" y="535" font-family="Arial, sans-serif" font-size="12" fill="#374151">中央ハブ</text>
+  
+  <rect x="200" y="520" width="20" height="20" fill="url(#nodeGrad2)"/>
+  <text x="230" y="535" font-family="Arial, sans-serif" font-size="12" fill="#374151">主要ノード</text>
+  
+  <rect x="350" y="520" width="20" height="20" fill="url(#nodeGrad3)"/>
+  <text x="380" y="535" font-family="Arial, sans-serif" font-size="12" fill="#374151">サブノード</text>
+  
+  <line x1="500" y1="530" x2="550" y2="530" stroke="#6366F1" stroke-width="2"/>
+  <text x="560" y="535" font-family="Arial, sans-serif" font-size="12" fill="#374151">主要接続</text>
+  
+  <line x1="650" y1="530" x2="700" y2="530" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="710" y="535" font-family="Arial, sans-serif" font-size="12" fill="#374151">二次接続</text>
+</svg>

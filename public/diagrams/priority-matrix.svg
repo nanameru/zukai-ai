@@ -1,0 +1,89 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="priorityGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="priorityGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="priorityGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="priorityGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Title -->
+  <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1F2937">優先度マトリックス</text>
+  
+  <!-- Y-axis label -->
+  <text x="30" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1F2937" transform="rotate(-90 30 250)">重要度</text>
+  
+  <!-- X-axis label -->
+  <text x="350" y="480" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1F2937">緊急度</text>
+  
+  <!-- Grid lines -->
+  <line x1="100" y1="60" x2="100" y2="400" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="100" y1="230" x2="600" y2="230" stroke="#9CA3AF" stroke-width="2"/>
+  
+  <!-- Quadrant labels -->
+  <text x="350" y="50" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6B7280">高</text>
+  <text x="350" y="420" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6B7280">低</text>
+  <text x="80" y="145" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#6B7280">高</text>
+  <text x="80" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#6B7280">低</text>
+  
+  <!-- Quadrant 1: 緊急かつ重要 (右上) -->
+  <rect x="100" y="60" width="500" height="170" rx="5" fill="#FEE2E2" stroke="#EF4444" stroke-width="2" stroke-dasharray="5,5" opacity="0.3"/>
+  <text x="350" y="90" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#991B1B">緊急かつ重要</text>
+  <text x="350" y="110" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7F1D1D">すぐに対応</text>
+  
+  <circle cx="200" cy="120" r="25" fill="url(#priorityGrad1)"/>
+  <text x="200" y="127" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">A</text>
+  
+  <circle cx="350" cy="100" r="25" fill="url(#priorityGrad1)"/>
+  <text x="350" y="107" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">B</text>
+  
+  <circle cx="500" cy="130" r="25" fill="url(#priorityGrad1)"/>
+  <text x="500" y="137" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">C</text>
+  
+  <!-- Quadrant 2: 重要だが緊急でない (左上) -->
+  <rect x="100" y="230" width="500" height="170" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2" stroke-dasharray="5,5" opacity="0.3"/>
+  <text x="350" y="260" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1E40AF">重要だが緊急でない</text>
+  <text x="350" y="280" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#1E3A8A">計画的に実行</text>
+  
+  <circle cx="200" cy="300" r="25" fill="url(#priorityGrad3)"/>
+  <text x="200" y="307" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">D</text>
+  
+  <circle cx="350" cy="320" r="25" fill="url(#priorityGrad3)"/>
+  <text x="350" y="327" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">E</text>
+  
+  <circle cx="500" cy="290" r="25" fill="url(#priorityGrad3)"/>
+  <text x="500" y="297" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">F</text>
+  
+  <!-- Quadrant 3: 緊急だが重要でない (右下) -->
+  <rect x="100" y="60" width="500" height="170" rx="5" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2" stroke-dasharray="5,5" opacity="0.3"/>
+  <text x="350" y="150" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400E">緊急だが重要でない</text>
+  <text x="350" y="170" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#78350F">委任・最小限対応</text>
+  
+  <circle cx="250" cy="180" r="20" fill="url(#priorityGrad2)"/>
+  <text x="250" y="186" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">G</text>
+  
+  <circle cx="450" cy="190" r="20" fill="url(#priorityGrad2)"/>
+  <text x="450" y="196" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">H</text>
+  
+  <!-- Quadrant 4: 緊急でも重要でもない (左下) -->
+  <rect x="100" y="230" width="500" height="170" rx="5" fill="#D1FAE5" stroke="#10B981" stroke-width="2" stroke-dasharray="5,5" opacity="0.3"/>
+  <text x="350" y="340" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#065F46">緊急でも重要でもない</text>
+  <text x="350" y="360" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#047857">削除・後回し</text>
+  
+  <circle cx="300" cy="350" r="18" fill="url(#priorityGrad4)"/>
+  <text x="300" y="356" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">I</text>
+  
+  <circle cx="550" cy="370" r="18" fill="url(#priorityGrad4)"/>
+  <text x="550" y="376" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">J</text>
+</svg>

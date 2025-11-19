@@ -1,0 +1,63 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="swotGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="swotGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="swotGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="swotGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Title -->
+  <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1F2937">SWOT分析</text>
+  
+  <!-- Grid lines -->
+  <line x1="350" y1="60" x2="350" y2="460" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="50" y1="260" x2="650" y2="260" stroke="#9CA3AF" stroke-width="2"/>
+  
+  <!-- Strengths (左上) -->
+  <rect x="50" y="60" width="300" height="200" rx="5" fill="url(#swotGrad1)" stroke="#333" stroke-width="2"/>
+  <text x="200" y="90" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">強み (Strengths)</text>
+  <text x="70" y="120" font-family="Arial, sans-serif" font-size="12" fill="white">• 優れた技術力</text>
+  <text x="70" y="145" font-family="Arial, sans-serif" font-size="12" fill="white">• ブランド認知度</text>
+  <text x="70" y="170" font-family="Arial, sans-serif" font-size="12" fill="white">• 豊富なリソース</text>
+  <text x="70" y="195" font-family="Arial, sans-serif" font-size="12" fill="white">• 市場シェア</text>
+  <text x="70" y="220" font-family="Arial, sans-serif" font-size="12" fill="white">• 顧客ロイヤルティ</text>
+  
+  <!-- Weaknesses (左下) -->
+  <rect x="50" y="260" width="300" height="200" rx="5" fill="url(#swotGrad2)" stroke="#333" stroke-width="2"/>
+  <text x="200" y="290" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">弱み (Weaknesses)</text>
+  <text x="70" y="320" font-family="Arial, sans-serif" font-size="12" fill="white">• 限られた予算</text>
+  <text x="70" y="345" font-family="Arial, sans-serif" font-size="12" fill="white">• 技術的負債</text>
+  <text x="70" y="370" font-family="Arial, sans-serif" font-size="12" fill="white">• 人材不足</text>
+  <text x="70" y="395" font-family="Arial, sans-serif" font-size="12" fill="white">• 市場認知度の低さ</text>
+  <text x="70" y="420" font-family="Arial, sans-serif" font-size="12" fill="white">• 古いシステム</text>
+  
+  <!-- Opportunities (右上) -->
+  <rect x="350" y="60" width="300" height="200" rx="5" fill="url(#swotGrad3)" stroke="#333" stroke-width="2"/>
+  <text x="500" y="90" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">機会 (Opportunities)</text>
+  <text x="370" y="120" font-family="Arial, sans-serif" font-size="12" fill="white">• 新市場への参入</text>
+  <text x="370" y="145" font-family="Arial, sans-serif" font-size="12" fill="white">• 技術革新</text>
+  <text x="370" y="170" font-family="Arial, sans-serif" font-size="12" fill="white">• パートナーシップ</text>
+  <text x="370" y="195" font-family="Arial, sans-serif" font-size="12" fill="white">• 市場拡大</text>
+  <text x="370" y="220" font-family="Arial, sans-serif" font-size="12" fill="white">• 規制緩和</text>
+  
+  <!-- Threats (右下) -->
+  <rect x="350" y="260" width="300" height="200" rx="5" fill="url(#swotGrad4)" stroke="#333" stroke-width="2"/>
+  <text x="500" y="290" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">脅威 (Threats)</text>
+  <text x="370" y="320" font-family="Arial, sans-serif" font-size="12" fill="white">• 競合の台頭</text>
+  <text x="370" y="345" font-family="Arial, sans-serif" font-size="12" fill="white">• 市場縮小</text>
+  <text x="370" y="370" font-family="Arial, sans-serif" font-size="12" fill="white">• 技術変化</text>
+  <text x="370" y="395" font-family="Arial, sans-serif" font-size="12" fill="white">• 規制強化</text>
+  <text x="370" y="420" font-family="Arial, sans-serif" font-size="12" fill="white">• 経済不況</text>
+</svg>

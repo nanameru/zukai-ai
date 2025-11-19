@@ -1,0 +1,49 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="timeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1F2937">タイムライン</text>
+  
+  <!-- Timeline line -->
+  <line x1="100" y1="200" x2="700" y2="200" stroke="#3B82F6" stroke-width="4"/>
+  
+  <!-- Event 1 -->
+  <circle cx="150" cy="200" r="12" fill="#3B82F6" stroke="white" stroke-width="3"/>
+  <line x1="150" y1="200" x2="150" y2="100" stroke="#3B82F6" stroke-width="2" stroke-dasharray="3,3"/>
+  <rect x="50" y="60" width="200" height="40" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  <text x="150" y="80" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1E40AF">イベント1</text>
+  <text x="150" y="95" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#1E3A8A">2024年1月</text>
+  
+  <!-- Event 2 -->
+  <circle cx="300" cy="200" r="12" fill="#8B5CF6" stroke="white" stroke-width="3"/>
+  <line x1="300" y1="200" x2="300" y2="100" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="3,3"/>
+  <rect x="200" y="60" width="200" height="40" rx="5" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="300" y="80" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#5B21B6">イベント2</text>
+  <text x="300" y="95" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#4C1D95">2024年4月</text>
+  
+  <!-- Event 3 -->
+  <circle cx="450" cy="200" r="12" fill="#10B981" stroke="white" stroke-width="3"/>
+  <line x1="450" y1="200" x2="450" y2="300" stroke="#10B981" stroke-width="2" stroke-dasharray="3,3"/>
+  <rect x="350" y="300" width="200" height="40" rx="5" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+  <text x="450" y="320" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#065F46">イベント3</text>
+  <text x="450" y="335" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#047857">2024年7月</text>
+  
+  <!-- Event 4 -->
+  <circle cx="600" cy="200" r="12" fill="#F59E0B" stroke="white" stroke-width="3"/>
+  <line x1="600" y1="200" x2="600" y2="300" stroke="#F59E0B" stroke-width="2" stroke-dasharray="3,3"/>
+  <rect x="500" y="300" width="200" height="40" rx="5" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+  <text x="600" y="320" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#92400E">イベント4</text>
+  <text x="600" y="335" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#78350F">2024年10月</text>
+  
+  <!-- Event 5 -->
+  <circle cx="650" cy="200" r="12" fill="#EF4444" stroke="white" stroke-width="3"/>
+  <line x1="650" y1="200" x2="650" y2="100" stroke="#EF4444" stroke-width="2" stroke-dasharray="3,3"/>
+  <rect x="550" y="60" width="200" height="40" rx="5" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+  <text x="650" y="80" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#991B1B">イベント5</text>
+  <text x="650" y="95" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7F1D1D">2024年12月</text>
+</svg>

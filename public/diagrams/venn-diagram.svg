@@ -1,0 +1,53 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="vennShadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="4" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Title -->
+  <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1F2937">ベン図</text>
+  
+  <!-- Circle 1 -->
+  <circle cx="250" cy="250" r="120" fill="#3B82F6" opacity="0.5" filter="url(#vennShadow)"/>
+  <text x="250" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1E40AF">セットA</text>
+  <text x="250" y="160" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1E3A8A">技術力</text>
+  
+  <!-- Circle 2 -->
+  <circle cx="450" cy="250" r="120" fill="#10B981" opacity="0.5" filter="url(#vennShadow)"/>
+  <text x="550" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#065F46">セットB</text>
+  <text x="550" y="270" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#047857">市場知識</text>
+  
+  <!-- Circle 3 -->
+  <circle cx="350" cy="150" r="120" fill="#8B5CF6" opacity="0.5" filter="url(#vennShadow)"/>
+  <text x="350" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#5B21B6">セットC</text>
+  <text x="350" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4C1D95">リソース</text>
+  
+  <!-- Intersection labels -->
+  <text x="350" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">A ∩ B</text>
+  <text x="350" y="255" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4B5563">技術×市場</text>
+  
+  <text x="300" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">A ∩ C</text>
+  <text x="300" y="195" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4B5563">技術×リソース</text>
+  
+  <text x="400" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">B ∩ C</text>
+  <text x="400" y="195" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4B5563">市場×リソース</text>
+  
+  <text x="350" y="200" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">A ∩ B ∩ C</text>
+  <text x="350" y="215" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#1F2937">最適な組み合わせ</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="380" width="20" height="20" fill="#3B82F6" opacity="0.5"/>
+  <text x="80" y="395" font-family="Arial, sans-serif" font-size="12" fill="#374151">セットA: 技術力</text>
+  
+  <rect x="250" y="380" width="20" height="20" fill="#10B981" opacity="0.5"/>
+  <text x="280" y="395" font-family="Arial, sans-serif" font-size="12" fill="#374151">セットB: 市場知識</text>
+  
+  <rect x="450" y="380" width="20" height="20" fill="#8B5CF6" opacity="0.5"/>
+  <text x="480" y="395" font-family="Arial, sans-serif" font-size="12" fill="#374151">セットC: リソース</text>
+  
+  <!-- Statistics -->
+  <text x="50" y="440" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1F2937">統計:</text>
+  <text x="50" y="460" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">Aのみ: 15% | Bのみ: 20% | Cのみ: 10%</text>
+  <text x="50" y="480" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">A∩B: 25% | A∩C: 15% | B∩C: 10% | A∩B∩C: 5%</text>
+</svg>
