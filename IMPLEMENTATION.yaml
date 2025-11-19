@@ -1,0 +1,394 @@
+# Zukai AI - Chrome Extension Implementation Specification
+# AI-powered visual diagram generator
+
+project:
+  name: "Zukai AI"
+  description: "Napkin.ai風のChrome拡張機能 - テキスト選択からAI生成SVG図解を作成"
+  version: "1.0.0"
+  architecture: "Monorepo (Next.js + Chrome Extension)"
+
+# ============================================
+# 技術スタック
+# ============================================
+tech_stack:
+  frontend:
+    web_app:
+      framework: "Next.js 16 (App Router)"
+      language: "TypeScript"
+      styling: "TailwindCSS 4"
+      auth: "Clerk"
+      database: "Convex"
+      
+    chrome_extension:
+      framework: "React 19 + Vite"
+      language: "TypeScript"
+      manifest: "Manifest V3"
+      build_tool: "@crxjs/vite-plugin"
+      
+  backend:
+    runtime: "Next.js API Routes"
+    ai_sdk: "Vercel AI SDK"
+    ai_model: "Google Gemini 1.5 Flash"
+    embedding_model: "text-embedding-004"
+    database: "Convex (with Vector Search)"
+
+# ============================================
+# プロジェクト構造
+# ============================================
+project_structure:
+  root: "/Users/kimurataiyou/zukai-ai"
+  
+  directories:
+    - path: "app/"
+      description: "Next.js App Router (Webアプリケーション)"
+      files:
+        - "layout.tsx: ルートレイアウト (ConvexClientProvider統合)"
+        - "page.tsx: ホームページ (ログイン/ダッシュボードへのナビゲーション)"
+        - "globals.css: グローバルスタイル (TailwindCSS)"
+        - "api/generate-svg/route.ts: SVG生成APIエンドポイント"
+        - "dashboard/page.tsx: ユーザーダッシュボード (図解履歴表示)"
+        
+    - path: "chrome-extension/"
+      description: "Chrome拡張機能 (Vite + React)"
+      files:
+        - "manifest.json: Manifest V3設定"
+        - "vite.config.ts: Vite設定 (CRXJS統合)"
+        - "src/App.tsx: サイドパネルUI (メインReactコンポーネント)"
+        - "src/App.css: サイドパネルスタイル"
+        - "src/content.ts: コンテンツスクリプト (テキスト選択検知)"
+        - "src/background.ts: バックグラウンドスクリプト (サイドパネル制御)"
+        
+    - path: "convex/"
+      description: "Convex バックエンド (データベース & サーバー関数)"
+      files:
+        - "schema.ts: データベーススキーマ定義"
+        - "auth.config.js: Clerk認証設定"
+        - "diagrams.ts: 図解の保存・取得関数"
+        
+    - path: "providers/"
+      description: "Reactプロバイダー"
+      files:
+        - "convex-client-provider.tsx: Convex + Clerk統合プロバイダー"
+
+# ============================================
+# データベーススキーマ (Convex)
+# ============================================
+database_schema:
+  tables:
+    users:
+      description: "ユーザー情報 (Clerk連携)"
+      fields:
+        - name: "tokenIdentifier"
+          type: "string"
+          description: "Clerkトークン識別子"
+        - name: "name"
+          type: "string (optional)"
+        - name: "email"
+          type: "string (optional)"
+      indexes:
+        - "by_token: [tokenIdentifier]"
+        
+    diagrams:
+      description: "ユーザーが作成した図解"
+      fields:
+        - name: "userId"
+          type: "string"
+          description: "作成者のID"
+        - name: "content"
+          type: "string"
+          description: "SVGコード"
+        - name: "originalText"
+          type: "string"
+          description: "元のテキスト"
+        - name: "title"
+          type: "string (optional)"
+        - name: "createdAt"
+          type: "number"
+          description: "作成日時 (Unix timestamp)"
+      indexes:
+        - "by_user: [userId]"
+        
+    svgTemplates:
+      description: "SVGテンプレート (RAG検索用)"
+      fields:
+        - name: "content"
+          type: "string"
+          description: "プレースホルダー付きSVGコード"
+        - name: "category"
+          type: "string"
+          description: "カテゴリ (comparison, process, hierarchy等)"
+        - name: "description"
+          type: "string"
+        - name: "keywords"
+          type: "array<string>"
+        - name: "embedding"
+          type: "array<float64>"
+          description: "ベクトル埋め込み (768次元)"
+      vector_indexes:
+        - name: "by_embedding"
+          vector_field: "embedding"
+          dimensions: 768
+          filter_fields: ["category"]
+
+# ============================================
+# Chrome拡張機能の実装詳細
+# ============================================
+chrome_extension:
+  manifest_v3:
+    permissions:
+      - "sidePanel"
+      - "activeTab"
+      - "scripting"
+    
+    components:
+      action:
+        description: "拡張機能アイコン (クリックでサイドパネル開く)"
+        
+      side_panel:
+        path: "index.html"
+        description: "Reactアプリ (SVG候補表示・カスタマイズUI)"
+        
+      background_script:
+        file: "src/background.ts"
+        type: "service_worker"
+        responsibilities:
+          - "サイドパネルの開閉制御"
+          - "コンテンツスクリプトからのメッセージ受信"
+          
+      content_script:
+        file: "src/content.ts"
+        matches: ["<all_urls>"]
+        responsibilities:
+          - "テキスト選択イベントの監視"
+          - "フローティングボタンの表示"
+          - "選択テキストをサイドパネルに送信"
+  
+  ui_flow:
+    step_1:
+      action: "ユーザーがWebページ上でテキストを選択 (10文字以上)"
+      trigger: "mouseup イベント"
+      
+    step_2:
+      action: "選択範囲の上に✨フローティングボタンが表示される"
+      styling: "グラデーション背景、ホバーアニメーション"
+      auto_hide: "5秒後に自動消去"
+      
+    step_3:
+      action: "ボタンをクリック"
+      result:
+        - "サイドパネルが開く"
+        - "選択テキストがサイドパネルに送信される"
+        
+    step_4:
+      action: "サイドパネルでAI処理開始"
+      process:
+        - "Next.js API (/api/generate-svg) にPOSTリクエスト"
+        - "ローディングスピナー表示"
+        
+    step_5:
+      action: "SVG候補が表示される"
+      features:
+        - "AIが生成したSVGプレビュー"
+        - "カテゴリ名 (Comparison, Process等)"
+        - "カスタマイズボタン"
+        - "Copy SVGボタン"
+        
+    step_6:
+      action: "カスタマイズ (オプション)"
+      options:
+        - "カラーピッカーで色変更"
+        - "リアルタイムプレビュー更新"
+        
+    step_7:
+      action: "Copy SVGボタンをクリック"
+      result: "SVGコードがクリップボードにコピーされる"
+
+# ============================================
+# Next.js API実装詳細
+# ============================================
+api_endpoints:
+  generate_svg:
+    path: "/api/generate-svg"
+    method: "POST"
+    
+    request_body:
+      text:
+        type: "string"
+        required: true
+        min_length: 10
+        description: "ユーザーが選択したテキスト"
+    
+    processing_steps:
+      step_1:
+        name: "テキスト構造分析"
+        model: "Gemini 1.5 Flash"
+        prompt: |
+          テキストを分析し、以下のカテゴリのいずれかを返す:
+          - comparison (比較)
+          - process (プロセス)
+          - hierarchy (階層)
+          - cycle (サイクル)
+          - relationship (関係性)
+          - timeline (時系列)
+        output: "カテゴリ名 (string)"
+        
+      step_2:
+        name: "ベクトル埋め込み生成"
+        model: "text-embedding-004"
+        input: "選択テキスト"
+        output: "768次元ベクトル"
+        purpose: "将来的なRAG検索用"
+        
+      step_3:
+        name: "SVG生成"
+        model: "Gemini 1.5 Flash"
+        prompt: |
+          カテゴリとテキストに基づいてSVG図解を生成:
+          - サイズ: 400x300px
+          - デザイン: モダン、ミニマル
+          - 色: 青・紫・緑系の心地よい配色
+          - テキスト内容を図解に含める
+        output: "SVGコード (string)"
+        
+    response_body:
+      suggestions:
+        type: "array"
+        items:
+          - id: "string"
+          - svg: "string (SVGコード)"
+          - title: "string (カテゴリ名)"
+          - category: "string"
+      embedding:
+        type: "array<number>"
+        description: "デバッグ用 (最初の10次元のみ)"
+
+# ============================================
+# Webダッシュボード実装
+# ============================================
+web_dashboard:
+  path: "/dashboard"
+  authentication: "Clerk (必須)"
+  
+  features:
+    diagram_gallery:
+      description: "過去に作成した図解の一覧表示"
+      layout: "グリッドレイアウト (3カラム)"
+      card_contents:
+        - "図解タイトル"
+        - "作成日時"
+        - "SVGプレビュー"
+        - "元のテキスト (2行まで)"
+        - "Copy SVGボタン"
+        
+    empty_state:
+      condition: "図解が0件の場合"
+      message: "Chrome拡張機能を使って最初の図解を作成しましょう"
+      
+    data_source:
+      convex_query: "api.diagrams.getUserDiagrams"
+      sort: "作成日時降順"
+
+# ============================================
+# 認証フロー (Clerk)
+# ============================================
+authentication:
+  provider: "Clerk"
+  integration: "Convex + Next.js"
+  
+  configuration:
+    clerk_provider:
+      location: "app/layout.tsx (ConvexClientProvider内)"
+      publishable_key: "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY"
+      
+    convex_auth:
+      location: "convex/auth.config.js"
+      jwt_template: "Issuer URL設定"
+      
+  user_flow:
+    login:
+      - "ホームページの「ログイン」ボタンをクリック"
+      - "Clerkモーダルが表示"
+      - "Googleアカウントでログイン"
+      - "ダッシュボードにリダイレクト"
+      
+    logout:
+      - "UserButtonからログアウト"
+
+# ============================================
+# カスタマイズ機能
+# ============================================
+customization:
+  color_change:
+    method: "正規表現によるSVG属性置換"
+    target_attributes:
+      - "fill"
+      - "stroke"
+    ui: "カラーピッカー (input type='color')"
+    preview: "リアルタイム更新"
+    
+  future_features:
+    - "テキスト編集"
+    - "サイズ変更"
+    - "フォント変更"
+
+# ============================================
+# デプロイ & 環境変数
+# ============================================
+deployment:
+  next_js:
+    platform: "Vercel (推奨)"
+    build_command: "npm run build"
+    
+  chrome_extension:
+    build_command: "cd chrome-extension && npm run build"
+    output_directory: "chrome-extension/dist"
+    installation: "chrome://extensions/ から「パッケージ化されていない拡張機能を読み込む」"
+    
+environment_variables:
+  required:
+    - name: "NEXT_PUBLIC_CONVEX_URL"
+      description: "Convex deployment URL"
+      
+    - name: "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY"
+      description: "Clerk公開鍵"
+      
+    - name: "GOOGLE_GENERATIVE_AI_API_KEY"
+      description: "Google AI API キー (Gemini用)"
+      location: ".env.local"
+
+# ============================================
+# 開発コマンド
+# ============================================
+development:
+  next_js:
+    dev: "npm run dev"
+    port: 3000
+    
+  convex:
+    dev: "npx convex dev"
+    
+  chrome_extension:
+    dev: "cd chrome-extension && npm run dev"
+    build: "cd chrome-extension && npm run build"
+
+# ============================================
+# 今後の拡張可能性
+# ============================================
+future_enhancements:
+  rag_system:
+    description: "事前生成したSVGテンプレートをベクトル検索"
+    implementation:
+      - "Convex svgTemplatesテーブルにテンプレート登録"
+      - "ベクトル検索でマッチするテンプレートを取得"
+      - "プレースホルダーにテキストを注入"
+      
+  stripe_integration:
+    description: "サブスクリプション課金"
+    tiers:
+      - "Free: 月10回まで"
+      - "Pro: 無制限"
+      
+  advanced_customization:
+    - "ドラッグ&ドロップでの挿入"
+    - "SVGエディタ統合"
+    - "テンプレートのお気に入り登録"
