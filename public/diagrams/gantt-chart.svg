@@ -1,0 +1,72 @@
+<svg width="700" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradTask3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradTask4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Y-axis -->
+  <line x1="100" y1="50" x2="100" y2="350" stroke="#6B7280" stroke-width="2"/>
+  
+  <!-- X-axis -->
+  <line x1="100" y1="350" x2="650" y2="350" stroke="#6B7280" stroke-width="2"/>
+  
+  <!-- Time labels -->
+  <text x="150" y="370" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="11">Week 1</text>
+  <text x="250" y="370" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="11">Week 2</text>
+  <text x="350" y="370" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="11">Week 3</text>
+  <text x="450" y="370" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="11">Week 4</text>
+  <text x="550" y="370" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="11">Week 5</text>
+  <text x="650" y="370" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="11">Week 6</text>
+  
+  <!-- Grid lines -->
+  <line x1="150" y1="50" x2="150" y2="350" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="250" y1="50" x2="250" y2="350" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="350" y1="50" x2="350" y2="350" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="450" y1="50" x2="450" y2="350" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="550" y1="50" x2="550" y2="350" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="650" y1="50" x2="650" y2="350" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="2,2"/>
+  
+  <!-- Task 1: Planning -->
+  <rect x="120" y="80" width="200" height="40" rx="6" fill="url(#gradTask1)" stroke="#1E40AF" stroke-width="2"/>
+  <text x="220" y="105" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">計画・設計</text>
+  <text x="50" y="105" text-anchor="end" fill="#374151" font-family="Arial, sans-serif" font-size="12">タスクA</text>
+  
+  <!-- Task 2: Development -->
+  <rect x="280" y="140" width="250" height="40" rx="6" fill="url(#gradTask2)" stroke="#059669" stroke-width="2"/>
+  <text x="405" y="165" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">開発</text>
+  <text x="50" y="165" text-anchor="end" fill="#374151" font-family="Arial, sans-serif" font-size="12">タスクB</text>
+  
+  <!-- Task 3: Testing -->
+  <rect x="480" y="200" width="120" height="40" rx="6" fill="url(#gradTask3)" stroke="#D97706" stroke-width="2"/>
+  <text x="540" y="225" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">テスト</text>
+  <text x="50" y="225" text-anchor="end" fill="#374151" font-family="Arial, sans-serif" font-size="12">タスクC</text>
+  
+  <!-- Task 4: Deployment -->
+  <rect x="580" y="260" width="50" height="40" rx="6" fill="url(#gradTask4)" stroke="#7C3AED" stroke-width="2"/>
+  <text x="605" y="285" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">リリース</text>
+  <text x="50" y="285" text-anchor="end" fill="#374151" font-family="Arial, sans-serif" font-size="12">タスクD</text>
+  
+  <!-- Milestone markers -->
+  <polygon points="320,100 330,110 320,120 310,110" fill="#EF4444" stroke="#DC2626" stroke-width="2"/>
+  <text x="330" y="135" fill="#991B1B" font-family="Arial, sans-serif" font-size="10" font-weight="bold">マイルストーン1</text>
+  
+  <polygon points="530,220 540,230 530,240 520,230" fill="#EF4444" stroke="#DC2626" stroke-width="2"/>
+  <text x="540" y="255" fill="#991B1B" font-family="Arial, sans-serif" font-size="10" font-weight="bold">マイルストーン2</text>
+  
+  <!-- Title -->
+  <text x="375" y="30" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="18" font-weight="bold">プロジェクトガントチャート</text>
+</svg>

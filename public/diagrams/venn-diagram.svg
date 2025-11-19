@@ -1,0 +1,36 @@
+<svg width="500" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadowVenn">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Circle 1: Technology -->
+  <circle cx="200" cy="180" r="100" fill="#3B82F6" opacity="0.6" stroke="#1E40AF" stroke-width="3" filter="url(#shadowVenn)"/>
+  <text x="200" y="140" text-anchor="middle" fill="#1E40AF" font-family="Arial, sans-serif" font-size="16" font-weight="bold">技術</text>
+  <text x="200" y="155" text-anchor="middle" fill="#1E40AF" font-family="Arial, sans-serif" font-size="12">Technology</text>
+  
+  <!-- Circle 2: Business -->
+  <circle cx="300" cy="180" r="100" fill="#10B981" opacity="0.6" stroke="#059669" stroke-width="3" filter="url(#shadowVenn)"/>
+  <text x="380" y="140" text-anchor="middle" fill="#065F46" font-family="Arial, sans-serif" font-size="16" font-weight="bold">ビジネス</text>
+  <text x="380" y="155" text-anchor="middle" fill="#065F46" font-family="Arial, sans-serif" font-size="12">Business</text>
+  
+  <!-- Circle 3: Design -->
+  <circle cx="250" cy="250" r="100" fill="#F59E0B" opacity="0.6" stroke="#D97706" stroke-width="3" filter="url(#shadowVenn)"/>
+  <text x="250" y="370" text-anchor="middle" fill="#92400E" font-family="Arial, sans-serif" font-size="16" font-weight="bold">デザイン</text>
+  <text x="250" y="385" text-anchor="middle" fill="#92400E" font-family="Arial, sans-serif" font-size="12">Design</text>
+  
+  <!-- Intersection labels -->
+  <text x="200" y="200" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">技術×ビジネス</text>
+  <text x="250" y="220" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">技術×デザイン</text>
+  <text x="300" y="240" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">ビジネス×デザイン</text>
+  
+  <!-- Center intersection -->
+  <text x="250" y="200" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="14" font-weight="bold">すべての交差</text>
+  <text x="250" y="215" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="11">統合ソリューション</text>
+  
+  <!-- Standalone labels -->
+  <text x="100" y="180" text-anchor="middle" fill="#1E40AF" font-family="Arial, sans-serif" font-size="11">技術のみ</text>
+  <text x="420" y="180" text-anchor="middle" fill="#065F46" font-family="Arial, sans-serif" font-size="11">ビジネスのみ</text>
+  <text x="250" y="100" text-anchor="middle" fill="#92400E" font-family="Arial, sans-serif" font-size="11">デザインのみ</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg width="600" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradOrg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- CEO -->
+  <rect x="250" y="20" width="100" height="60" rx="8" fill="url(#gradOrg)" stroke="#333" stroke-width="2"/>
+  <text x="300" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">CEO</text>
+  <text x="300" y="60" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">代表取締役</text>
+  
+  <!-- Lines from CEO -->
+  <line x1="300" y1="80" x2="300" y2="120" stroke="#333" stroke-width="2"/>
+  <line x1="150" y1="120" x2="450" y2="120" stroke="#333" stroke-width="2"/>
+  
+  <!-- VP 1 -->
+  <line x1="150" y1="120" x2="150" y2="150" stroke="#333" stroke-width="2"/>
+  <rect x="100" y="150" width="100" height="60" rx="8" fill="#E0E7FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="150" y="175" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">VP 営業</text>
+  <text x="150" y="190" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="10">営業部門</text>
+  
+  <!-- VP 2 -->
+  <line x1="300" y1="120" x2="300" y2="150" stroke="#333" stroke-width="2"/>
+  <rect x="250" y="150" width="100" height="60" rx="8" fill="#E0E7FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="300" y="175" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">VP 開発</text>
+  <text x="300" y="190" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="10">開発部門</text>
+  
+  <!-- VP 3 -->
+  <line x1="450" y1="120" x2="450" y2="150" stroke="#333" stroke-width="2"/>
+  <rect x="400" y="150" width="100" height="60" rx="8" fill="#E0E7FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="450" y="175" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">VP 人事</text>
+  <text x="450" y="190" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="10">人事部門</text>
+  
+  <!-- Managers under VP 1 -->
+  <line x1="100" y1="210" x2="200" y2="210" stroke="#333" stroke-width="1"/>
+  <line x1="100" y1="210" x2="100" y2="250" stroke="#333" stroke-width="1"/>
+  <line x1="200" y1="210" x2="200" y2="250" stroke="#333" stroke-width="1"/>
+  
+  <rect x="50" y="250" width="100" height="50" rx="6" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+  <text x="100" y="275" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11">マネージャーA</text>
+  
+  <rect x="150" y="250" width="100" height="50" rx="6" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+  <text x="200" y="275" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11">マネージャーB</text>
+  
+  <!-- Managers under VP 2 -->
+  <line x1="250" y1="210" x2="350" y2="210" stroke="#333" stroke-width="1"/>
+  <line x1="250" y1="210" x2="250" y2="250" stroke="#333" stroke-width="1"/>
+  <line x1="350" y1="210" x2="350" y2="250" stroke="#333" stroke-width="1"/>
+  
+  <rect x="200" y="250" width="100" height="50" rx="6" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+  <text x="250" y="275" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11">マネージャーC</text>
+  
+  <rect x="300" y="250" width="100" height="50" rx="6" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+  <text x="350" y="275" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11">マネージャーD</text>
+  
+  <!-- Managers under VP 3 -->
+  <line x1="400" y1="210" x2="500" y2="210" stroke="#333" stroke-width="1"/>
+  <line x1="400" y1="210" x2="400" y2="250" stroke="#333" stroke-width="1"/>
+  <line x1="500" y1="210" x2="500" y2="250" stroke="#333" stroke-width="1"/>
+  
+  <rect x="350" y="250" width="100" height="50" rx="6" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+  <text x="400" y="275" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11">マネージャーE</text>
+  
+  <rect x="450" y="250" width="100" height="50" rx="6" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+  <text x="500" y="275" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11">マネージャーF</text>
+</svg>

@@ -1,0 +1,71 @@
+<svg width="700" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradJourney" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Journey path -->
+  <path d="M 50 200 Q 175 100, 300 200 T 550 200" stroke="url(#gradJourney)" stroke-width="4" fill="none"/>
+  
+  <!-- Stage 1: Awareness -->
+  <circle cx="100" cy="200" r="25" fill="#3B82F6" stroke="white" stroke-width="3"/>
+  <rect x="30" y="100" width="140" height="60" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  <text x="100" y="125" text-anchor="middle" fill="#1E40AF" font-family="Arial, sans-serif" font-size="13" font-weight="bold">認知</text>
+  <text x="100" y="142" text-anchor="middle" fill="#1E40AF" font-family="Arial, sans-serif" font-size="11">広告・SNS</text>
+  <text x="100" y="155" text-anchor="middle" fill="#1E40AF" font-family="Arial, sans-serif" font-size="10">Awareness</text>
+  
+  <!-- Stage 2: Consideration -->
+  <circle cx="250" cy="200" r="25" fill="#8B5CF6" stroke="white" stroke-width="3"/>
+  <rect x="180" y="100" width="140" height="60" rx="8" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="250" y="125" text-anchor="middle" fill="#6D28D9" font-family="Arial, sans-serif" font-size="13" font-weight="bold">検討</text>
+  <text x="250" y="142" text-anchor="middle" fill="#6D28D9" font-family="Arial, sans-serif" font-size="11">比較・レビュー</text>
+  <text x="250" y="155" text-anchor="middle" fill="#6D28D9" font-family="Arial, sans-serif" font-size="10">Consideration</text>
+  
+  <!-- Stage 3: Purchase -->
+  <circle cx="400" cy="200" r="25" fill="#EC4899" stroke="white" stroke-width="3"/>
+  <rect x="330" y="100" width="140" height="60" rx="8" fill="#FCE7F3" stroke="#EC4899" stroke-width="2"/>
+  <text x="400" y="125" text-anchor="middle" fill="#BE185D" font-family="Arial, sans-serif" font-size="13" font-weight="bold">購入</text>
+  <text x="400" y="142" text-anchor="middle" fill="#BE185D" font-family="Arial, sans-serif" font-size="11">決済・注文</text>
+  <text x="400" y="155" text-anchor="middle" fill="#BE185D" font-family="Arial, sans-serif" font-size="10">Purchase</text>
+  
+  <!-- Stage 4: Retention -->
+  <circle cx="550" cy="200" r="25" fill="#10B981" stroke="white" stroke-width="3"/>
+  <rect x="480" y="100" width="140" height="60" rx="8" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+  <text x="550" y="125" text-anchor="middle" fill="#065F46" font-family="Arial, sans-serif" font-size="13" font-weight="bold">リテンション</text>
+  <text x="550" y="142" text-anchor="middle" fill="#065F46" font-family="Arial, sans-serif" font-size="11">継続利用</text>
+  <text x="550" y="155" text-anchor="middle" fill="#065F46" font-family="Arial, sans-serif" font-size="10">Retention</text>
+  
+  <!-- Touchpoints below -->
+  <rect x="50" y="250" width="100" height="80" rx="6" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+  <text x="100" y="275" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11" font-weight="bold">タッチポイント</text>
+  <text x="100" y="295" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">• 広告</text>
+  <text x="100" y="310" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">• 検索</text>
+  <text x="100" y="325" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">• SNS</text>
+  
+  <rect x="175" y="250" width="100" height="80" rx="6" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+  <text x="225" y="275" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11" font-weight="bold">タッチポイント</text>
+  <text x="225" y="295" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">• ウェブサイト</text>
+  <text x="225" y="310" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">• レビュー</text>
+  <text x="225" y="325" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">• デモ</text>
+  
+  <rect x="300" y="250" width="100" height="80" rx="6" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+  <text x="350" y="275" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11" font-weight="bold">タッチポイント</text>
+  <text x="350" y="295" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">• カート</text>
+  <text x="350" y="310" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">• 決済</text>
+  <text x="350" y="325" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">• 確認</text>
+  
+  <rect x="425" y="250" width="100" height="80" rx="6" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+  <text x="475" y="275" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11" font-weight="bold">タッチポイント</text>
+  <text x="475" y="295" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">• サポート</text>
+  <text x="475" y="310" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">• メール</text>
+  <text x="475" y="325" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">• アップデート</text>
+  
+  <!-- Connecting lines -->
+  <line x1="100" y1="200" x2="100" y2="250" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="250" y1="200" x2="225" y2="250" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="400" y1="200" x2="350" y2="250" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="550" y1="200" x2="475" y2="250" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,3"/>
+</svg>

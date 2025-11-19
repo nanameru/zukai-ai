@@ -1,0 +1,54 @@
+<svg width="500" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Pie chart slices -->
+  <!-- Slice 1: 35% -->
+  <path d="M 200 200 L 200 100 A 100 100 0 0 1 270 120 Z" fill="#3B82F6" filter="url(#shadow)"/>
+  <text x="240" y="80" fill="#1E40AF" font-family="Arial, sans-serif" font-size="12" font-weight="bold">35%</text>
+  <text x="240" y="95" fill="#1E40AF" font-family="Arial, sans-serif" font-size="11">カテゴリA</text>
+  
+  <!-- Slice 2: 25% -->
+  <path d="M 200 200 L 270 120 A 100 100 0 0 1 320 200 Z" fill="#10B981" filter="url(#shadow)"/>
+  <text x="300" y="100" fill="#065F46" font-family="Arial, sans-serif" font-size="12" font-weight="bold">25%</text>
+  <text x="300" y="115" fill="#065F46" font-family="Arial, sans-serif" font-size="11">カテゴリB</text>
+  
+  <!-- Slice 3: 20% -->
+  <path d="M 200 200 L 320 200 A 100 100 0 0 1 280 280 Z" fill="#F59E0B" filter="url(#shadow)"/>
+  <text x="310" y="250" fill="#92400E" font-family="Arial, sans-serif" font-size="12" font-weight="bold">20%</text>
+  <text x="310" y="265" fill="#92400E" font-family="Arial, sans-serif" font-size="11">カテゴリC</text>
+  
+  <!-- Slice 4: 15% -->
+  <path d="M 200 200 L 280 280 A 100 100 0 0 1 200 300 Z" fill="#EF4444" filter="url(#shadow)"/>
+  <text x="170" y="300" fill="#991B1B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">15%</text>
+  <text x="170" y="315" fill="#991B1B" font-family="Arial, sans-serif" font-size="11">カテゴリD</text>
+  
+  <!-- Slice 5: 5% -->
+  <path d="M 200 200 L 200 300 A 100 100 0 0 1 200 100 Z" fill="#8B5CF6" filter="url(#shadow)"/>
+  <text x="150" y="200" fill="#6D28D9" font-family="Arial, sans-serif" font-size="12" font-weight="bold">5%</text>
+  <text x="150" y="215" fill="#6D28D9" font-family="Arial, sans-serif" font-size="11">その他</text>
+  
+  <!-- Center circle -->
+  <circle cx="200" cy="200" r="60" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="200" y="195" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">合計</text>
+  <text x="200" y="210" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="12">100%</text>
+  
+  <!-- Legend -->
+  <rect x="350" y="80" width="15" height="15" fill="#3B82F6"/>
+  <text x="375" y="92" fill="#374151" font-family="Arial, sans-serif" font-size="12">カテゴリA (35%)</text>
+  
+  <rect x="350" y="110" width="15" height="15" fill="#10B981"/>
+  <text x="375" y="122" fill="#374151" font-family="Arial, sans-serif" font-size="12">カテゴリB (25%)</text>
+  
+  <rect x="350" y="140" width="15" height="15" fill="#F59E0B"/>
+  <text x="375" y="152" fill="#374151" font-family="Arial, sans-serif" font-size="12">カテゴリC (20%)</text>
+  
+  <rect x="350" y="170" width="15" height="15" fill="#EF4444"/>
+  <text x="375" y="182" fill="#374151" font-family="Arial, sans-serif" font-size="12">カテゴリD (15%)</text>
+  
+  <rect x="350" y="200" width="15" height="15" fill="#8B5CF6"/>
+  <text x="375" y="212" fill="#374151" font-family="Arial, sans-serif" font-size="12">その他 (5%)</text>
+</svg>
