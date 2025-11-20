@@ -31,15 +31,15 @@
   <!-- Pyramid Layers -->
   <!-- Top Layer -->
   <path d="M350 80 L435 200 L265 200 Z" fill="url(#pyramidGrad1)" stroke="#ffffff" stroke-width="2" filter="url(#dropShadow)"/>
-  <text x="350" y="160" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Mission / Vision</text>
+  <text x="350" y="170" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Mission / Vision</text>
   
   <!-- Middle Layer -->
   <path d="M265 200 L435 200 L520 320 L180 320 Z" fill="url(#pyramidGrad2)" stroke="#ffffff" stroke-width="2" filter="url(#dropShadow)"/>
-  <text x="350" y="270" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Strategy / Goals</text>
+  <text x="350" y="275" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Strategy / Goals</text>
   
   <!-- Bottom Layer -->
   <path d="M180 320 L520 320 L605 440 L95 440 Z" fill="url(#pyramidGrad3)" stroke="#ffffff" stroke-width="2" filter="url(#dropShadow)"/>
-  <text x="350" y="390" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Tactics / Action Plan</text>
+  <text x="350" y="395" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Tactics / Action Plan</text>
 
   <!-- Connecting lines / Labels (Optional) -->
   <line x1="410" y1="140" x2="510" y2="140" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4"/>
