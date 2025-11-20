@@ -1,57 +1,52 @@
 <svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter id="shadow">
-      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
-    </filter>
-  </defs>
-  
   <!-- Title -->
-  <text x="300" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1F2937">円グラフ</text>
-  
-  <!-- Pie chart slices -->
-  <!-- Slice 1: 35% -->
-  <path d="M 300 200 L 300 100 A 100 100 0 0 1 386.6 150 L 300 200 Z" 
-        fill="#3B82F6" filter="url(#shadow)"/>
-  <text x="340" y="135" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">35%</text>
-  
-  <!-- Slice 2: 25% -->
-  <path d="M 300 200 L 386.6 150 A 100 100 0 0 1 400 200 L 300 200 Z" 
-        fill="#8B5CF6" filter="url(#shadow)"/>
-  <text x="370" y="175" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">25%</text>
-  
-  <!-- Slice 3: 20% -->
-  <path d="M 300 200 L 400 200 A 100 100 0 0 1 386.6 250 L 300 200 Z" 
-        fill="#10B981" filter="url(#shadow)"/>
-  <text x="365" y="225" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">20%</text>
-  
-  <!-- Slice 4: 15% -->
-  <path d="M 300 200 L 386.6 250 A 100 100 0 0 1 300 300 L 300 200 Z" 
-        fill="#F59E0B" filter="url(#shadow)"/>
-  <text x="335" y="265" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">15%</text>
-  
-  <!-- Slice 5: 5% -->
-  <path d="M 300 200 L 300 300 A 100 100 0 0 1 213.4 250 L 300 200 Z" 
-        fill="#EF4444" filter="url(#shadow)"/>
-  <text x="265" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">5%</text>
-  
-  <!-- Center circle -->
-  <circle cx="300" cy="200" r="60" fill="white" stroke="#E5E7EB" stroke-width="2"/>
-  <text x="300" y="195" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">合計</text>
-  <text x="300" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">100%</text>
-  
+  <text x="300" y="40" font-family="sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1F2937">円グラフ</text>
+
+  <!-- Chart Group -->
+  <g transform="translate(-20, 20)">
+    <!-- Slice 1: 35% -->
+    <path d="M 300 200 L 300 80 A 120 120 0 0 1 397.08 270.44 L 300 200 Z" fill="#3B82F6" stroke="white" stroke-width="2"/>
+    <text x="385" y="165" font-family="sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">35%</text>
+
+    <!-- Slice 2: 25% -->
+    <path d="M 300 200 L 397.08 270.44 A 120 120 0 0 1 229.56 297.08 L 300 200 Z" fill="#8B5CF6" stroke="white" stroke-width="2"/>
+    <text x="325" y="285" font-family="sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">25%</text>
+
+    <!-- Slice 3: 20% -->
+    <path d="M 300 200 L 229.56 297.08 A 120 120 0 0 1 185.88 162.92 L 300 200 Z" fill="#10B981" stroke="white" stroke-width="2"/>
+    <text x="220" y="245" font-family="sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">20%</text>
+
+    <!-- Slice 4: 15% -->
+    <path d="M 300 200 L 185.88 162.92 A 120 120 0 0 1 262.92 85.88 L 300 200 Z" fill="#F59E0B" stroke="white" stroke-width="2"/>
+    <text x="225" y="145" font-family="sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">15%</text>
+
+    <!-- Slice 5: 5% -->
+    <path d="M 300 200 L 262.92 85.88 A 120 120 0 0 1 300 80 L 300 200 Z" fill="#EF4444" stroke="white" stroke-width="2"/>
+    <text x="282" y="115" font-family="sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">5%</text>
+
+    <!-- Donut Hole -->
+    <circle cx="300" cy="200" r="70" fill="white"/>
+    
+    <!-- Center Text -->
+    <text x="300" y="195" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#374151">合計</text>
+    <text x="300" y="215" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#374151">100%</text>
+  </g>
+
   <!-- Legend -->
-  <rect x="450" y="100" width="15" height="15" fill="#3B82F6"/>
-  <text x="475" y="112" font-family="Arial, sans-serif" font-size="12" fill="#374151">カテゴリA (35%)</text>
-  
-  <rect x="450" y="130" width="15" height="15" fill="#8B5CF6"/>
-  <text x="475" y="142" font-family="Arial, sans-serif" font-size="12" fill="#374151">カテゴリB (25%)</text>
-  
-  <rect x="450" y="160" width="15" height="15" fill="#10B981"/>
-  <text x="475" y="172" font-family="Arial, sans-serif" font-size="12" fill="#374151">カテゴリC (20%)</text>
-  
-  <rect x="450" y="190" width="15" height="15" fill="#F59E0B"/>
-  <text x="475" y="202" font-family="Arial, sans-serif" font-size="12" fill="#374151">カテゴリD (15%)</text>
-  
-  <rect x="450" y="220" width="15" height="15" fill="#EF4444"/>
-  <text x="475" y="232" font-family="Arial, sans-serif" font-size="12" fill="#374151">カテゴリE (5%)</text>
+  <g transform="translate(440, 140)">
+    <circle cx="0" cy="0" r="6" fill="#3B82F6"/>
+    <text x="15" y="4" font-family="sans-serif" font-size="12" fill="#4B5563">カテゴリA (35%)</text>
+    
+    <circle cx="0" cy="25" r="6" fill="#8B5CF6"/>
+    <text x="15" y="29" font-family="sans-serif" font-size="12" fill="#4B5563">カテゴリB (25%)</text>
+    
+    <circle cx="0" cy="50" r="6" fill="#10B981"/>
+    <text x="15" y="54" font-family="sans-serif" font-size="12" fill="#4B5563">カテゴリC (20%)</text>
+    
+    <circle cx="0" cy="75" r="6" fill="#F59E0B"/>
+    <text x="15" y="79" font-family="sans-serif" font-size="12" fill="#4B5563">カテゴリD (15%)</text>
+    
+    <circle cx="0" cy="100" r="6" fill="#EF4444"/>
+    <text x="15" y="104" font-family="sans-serif" font-size="12" fill="#4B5563">カテゴリE (5%)</text>
+  </g>
 </svg>
