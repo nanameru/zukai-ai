@@ -1,0 +1,54 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pyramidGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pyramidGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pyramidGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge> 
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/> 
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Title -->
+  <text x="350" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1F2937">ピラミッド図 (階層構造)</text>
+  
+  <!-- Pyramid Layers -->
+  <!-- Top Layer -->
+  <path d="M350 80 L435 200 L265 200 Z" fill="url(#pyramidGrad1)" stroke="#ffffff" stroke-width="2" filter="url(#dropShadow)"/>
+  <text x="350" y="160" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Mission / Vision</text>
+  
+  <!-- Middle Layer -->
+  <path d="M265 200 L435 200 L520 320 L180 320 Z" fill="url(#pyramidGrad2)" stroke="#ffffff" stroke-width="2" filter="url(#dropShadow)"/>
+  <text x="350" y="270" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Strategy / Goals</text>
+  
+  <!-- Bottom Layer -->
+  <path d="M180 320 L520 320 L605 440 L95 440 Z" fill="url(#pyramidGrad3)" stroke="#ffffff" stroke-width="2" filter="url(#dropShadow)"/>
+  <text x="350" y="390" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Tactics / Action Plan</text>
+
+  <!-- Connecting lines / Labels (Optional) -->
+  <line x1="410" y1="140" x2="510" y2="140" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4"/>
+  <text x="520" y="145" font-family="Arial, sans-serif" font-size="14" fill="#4B5563">最上位概念</text>
+  
+  <line x1="490" y1="260" x2="590" y2="260" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4"/>
+  <text x="600" y="265" font-family="Arial, sans-serif" font-size="14" fill="#4B5563">具体的戦略</text>
+  
+  <line x1="580" y1="380" x2="660" y2="380" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4"/>
+  <text x="670" y="385" font-family="Arial, sans-serif" font-size="14" fill="#4B5563">実行施策</text>
+
+</svg>
