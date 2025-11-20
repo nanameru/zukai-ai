@@ -1,0 +1,54 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="radarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1F2937">レーダーチャート (5軸評価)</text>
+
+  <!-- Background Grid -->
+  <!-- Center: 350, 270 -->
+  <!-- Radius: 150 -->
+  <!-- Pentagon points calculation -->
+  <g stroke="#E5E7EB" stroke-width="1" fill="none">
+    <!-- Outer (100%) -->
+    <polygon points="350,120 493,224 438,393 262,393 207,224" stroke="#9CA3AF" />
+    <!-- 80% -->
+    <polygon points="350,150 464,233 420,368 280,368 236,233" />
+    <!-- 60% -->
+    <polygon points="350,180 436,242 403,344 297,344 264,242" />
+    <!-- 40% -->
+    <polygon points="350,210 407,252 385,319 315,319 293,252" />
+    <!-- 20% -->
+    <polygon points="350,240 379,261 368,295 332,295 321,261" />
+    
+    <!-- Spoke lines -->
+    <line x1="350" y1="270" x2="350" y2="120" />
+    <line x1="350" y1="270" x2="493" y2="224" />
+    <line x1="350" y1="270" x2="438" y2="393" />
+    <line x1="350" y1="270" x2="262" y2="393" />
+    <line x1="350" y1="270" x2="207" y2="224" />
+  </g>
+
+  <!-- Data Area (Example data) -->
+  <!-- Values: 90%, 70%, 85%, 60%, 80% -->
+  <polygon points="350,135 450,238 412,374 297,344 236,233" fill="url(#radarGrad)" stroke="#2563EB" stroke-width="2" opacity="0.8"/>
+
+  <!-- Labels -->
+  <text x="350" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#374151">品質 (Quality)</text>
+  <text x="510" y="220" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#374151">価格 (Price)</text>
+  <text x="450" y="415" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#374151">機能 (Function)</text>
+  <text x="250" y="415" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#374151">デザイン (Design)</text>
+  <text x="190" y="220" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#374151">サポート (Support)</text>
+
+  <!-- Data Points -->
+  <circle cx="350" cy="135" r="4" fill="#2563EB" />
+  <circle cx="450" cy="238" r="4" fill="#2563EB" />
+  <circle cx="412" cy="374" r="4" fill="#2563EB" />
+  <circle cx="297" cy="344" r="4" fill="#2563EB" />
+  <circle cx="236" cy="233" r="4" fill="#2563EB" />
+
+</svg>

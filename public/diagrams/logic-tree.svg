@@ -1,0 +1,54 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <rect id="node" width="140" height="60" rx="5" ry="5" fill="white" stroke="#3B82F6" stroke-width="2"/>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1F2937">ロジックツリー (問題解決)</text>
+
+  <!-- Connector Lines -->
+  <path d="M150 270 L220 270" stroke="#9CA3AF" stroke-width="2" fill="none"/>
+  
+  <path d="M220 270 L220 150 L260 150" stroke="#9CA3AF" stroke-width="2" fill="none"/>
+  <path d="M220 270 L220 390 L260 390" stroke="#9CA3AF" stroke-width="2" fill="none"/>
+  
+  <path d="M400 150 L440 150" stroke="#9CA3AF" stroke-width="2" fill="none"/>
+  <path d="M400 150 L420 150 L420 90 L440 90" stroke="#9CA3AF" stroke-width="2" fill="none"/>
+  <path d="M400 150 L420 150 L420 210 L440 210" stroke="#9CA3AF" stroke-width="2" fill="none"/>
+
+  <path d="M400 390 L440 390" stroke="#9CA3AF" stroke-width="2" fill="none"/>
+  <path d="M400 390 L420 390 L420 330 L440 330" stroke="#9CA3AF" stroke-width="2" fill="none"/>
+  <path d="M400 390 L420 390 L420 450 L440 450" stroke="#9CA3AF" stroke-width="2" fill="none"/>
+
+  <!-- Root Node -->
+  <use href="#node" x="10" y="240" />
+  <text x="80" y="275" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">主要課題</text>
+
+  <!-- Level 1 Nodes -->
+  <use href="#node" x="260" y="120" />
+  <text x="330" y="155" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">原因 A</text>
+
+  <use href="#node" x="260" y="360" />
+  <text x="330" y="395" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">原因 B</text>
+
+  <!-- Level 2 Nodes (Top) -->
+  <rect x="440" y="60" width="120" height="50" rx="3" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+  <text x="500" y="90" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">詳細要素 A-1</text>
+
+  <rect x="440" y="125" width="120" height="50" rx="3" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+  <text x="500" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">詳細要素 A-2</text>
+
+  <rect x="440" y="185" width="120" height="50" rx="3" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+  <text x="500" y="215" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">詳細要素 A-3</text>
+
+  <!-- Level 2 Nodes (Bottom) -->
+  <rect x="440" y="305" width="120" height="50" rx="3" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+  <text x="500" y="335" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">詳細要素 B-1</text>
+
+  <rect x="440" y="365" width="120" height="50" rx="3" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+  <text x="500" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">詳細要素 B-2</text>
+
+  <rect x="440" y="425" width="120" height="50" rx="3" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+  <text x="500" y="455" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">詳細要素 B-3</text>
+
+</svg>

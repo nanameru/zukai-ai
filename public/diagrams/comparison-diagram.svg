@@ -1,0 +1,65 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="compGradA" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="compGradB" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1F2937">対比図 (A案 vs B案)</text>
+
+  <!-- Container A -->
+  <rect x="50" y="80" width="290" height="380" rx="10" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1"/>
+  <!-- Header A -->
+  <rect x="50" y="80" width="290" height="60" rx="10" fill="url(#compGradA)"/>
+  <rect x="50" y="120" width="290" height="20" fill="url(#compGradA)"/> <!-- square off bottom corners of header -->
+  <text x="195" y="120" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">プラン A</text>
+
+  <!-- Content A -->
+  <text x="70" y="180" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">メリット</text>
+  <circle cx="80" cy="210" r="4" fill="#2563EB"/>
+  <text x="95" y="215" font-family="Arial, sans-serif" font-size="14" fill="#4B5563">コストが低い</text>
+  <circle cx="80" cy="240" r="4" fill="#2563EB"/>
+  <text x="95" y="245" font-family="Arial, sans-serif" font-size="14" fill="#4B5563">導入が早い</text>
+  
+  <line x1="70" y1="270" x2="320" y2="270" stroke="#E5E7EB" stroke-width="2"/>
+
+  <text x="70" y="300" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">デメリット</text>
+  <circle cx="80" cy="330" r="4" fill="#EF4444"/>
+  <text x="95" y="335" font-family="Arial, sans-serif" font-size="14" fill="#4B5563">機能が限定的</text>
+  <circle cx="80" cy="360" r="4" fill="#EF4444"/>
+  <text x="95" y="365" font-family="Arial, sans-serif" font-size="14" fill="#4B5563">拡張性が低い</text>
+
+
+  <!-- Container B -->
+  <rect x="360" y="80" width="290" height="380" rx="10" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1"/>
+  <!-- Header B -->
+  <rect x="360" y="80" width="290" height="60" rx="10" fill="url(#compGradB)"/>
+  <rect x="360" y="120" width="290" height="20" fill="url(#compGradB)"/>
+  <text x="505" y="120" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">プラン B</text>
+
+  <!-- Content B -->
+  <text x="380" y="180" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">メリット</text>
+  <circle cx="390" cy="210" r="4" fill="#DC2626"/>
+  <text x="405" y="215" font-family="Arial, sans-serif" font-size="14" fill="#4B5563">高機能・多用途</text>
+  <circle cx="390" cy="240" r="4" fill="#DC2626"/>
+  <text x="405" y="245" font-family="Arial, sans-serif" font-size="14" fill="#4B5563">将来性が高い</text>
+
+  <line x1="380" y1="270" x2="630" y2="270" stroke="#E5E7EB" stroke-width="2"/>
+
+  <text x="380" y="300" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">デメリット</text>
+  <circle cx="390" cy="330" r="4" fill="#6B7280"/>
+  <text x="405" y="335" font-family="Arial, sans-serif" font-size="14" fill="#4B5563">初期費用が高い</text>
+  <circle cx="390" cy="360" r="4" fill="#6B7280"/>
+  <text x="405" y="365" font-family="Arial, sans-serif" font-size="14" fill="#4B5563">導入期間が長い</text>
+
+  <!-- VS badge -->
+  <circle cx="350" cy="270" r="25" fill="white" stroke="#D1D5DB" stroke-width="2"/>
+  <text x="350" y="278" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1F2937">VS</text>
+
+</svg>

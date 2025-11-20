@@ -1,0 +1,64 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="stepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1F2937">プロセスフロー (4ステップ)</text>
+
+  <!-- Step 1 -->
+  <path d="M50 150 H180 L210 200 L180 250 H50 L80 200 Z" fill="url(#stepGrad)" stroke="white" stroke-width="2"/>
+  <text x="130" y="195" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Step 1</text>
+  <text x="130" y="220" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">準備・計画</text>
+  
+  <!-- Description 1 -->
+  <rect x="50" y="270" width="140" height="100" rx="5" fill="#F3F4F6" stroke="#D1D5DB"/>
+  <text x="60" y="290" font-family="Arial, sans-serif" font-size="12" fill="#374151">
+    <tspan x="60" dy="0">・現状分析</tspan>
+    <tspan x="60" dy="20">・目標設定</tspan>
+    <tspan x="60" dy="20">・チーム編成</tspan>
+  </text>
+
+  <!-- Step 2 -->
+  <path d="M220 150 H350 L380 200 L350 250 H220 L250 200 Z" fill="url(#stepGrad)" stroke="white" stroke-width="2" opacity="0.9"/>
+  <text x="300" y="195" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Step 2</text>
+  <text x="300" y="220" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">設計・開発</text>
+
+  <!-- Description 2 -->
+  <rect x="220" y="270" width="140" height="100" rx="5" fill="#F3F4F6" stroke="#D1D5DB"/>
+  <text x="230" y="290" font-family="Arial, sans-serif" font-size="12" fill="#374151">
+    <tspan x="230" dy="0">・仕様策定</tspan>
+    <tspan x="230" dy="20">・プロトタイプ</tspan>
+    <tspan x="230" dy="20">・詳細設計</tspan>
+  </text>
+
+  <!-- Step 3 -->
+  <path d="M390 150 H520 L550 200 L520 250 H390 L420 200 Z" fill="url(#stepGrad)" stroke="white" stroke-width="2" opacity="0.8"/>
+  <text x="470" y="195" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Step 3</text>
+  <text x="470" y="220" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">実装・テスト</text>
+
+  <!-- Description 3 -->
+  <rect x="390" y="270" width="140" height="100" rx="5" fill="#F3F4F6" stroke="#D1D5DB"/>
+  <text x="400" y="290" font-family="Arial, sans-serif" font-size="12" fill="#374151">
+    <tspan x="400" dy="0">・コーディング</tspan>
+    <tspan x="400" dy="20">・単体テスト</tspan>
+    <tspan x="400" dy="20">・結合テスト</tspan>
+  </text>
+
+  <!-- Step 4 -->
+  <path d="M560 150 H690 L690 250 H560 L590 200 Z" fill="url(#stepGrad)" stroke="white" stroke-width="2" opacity="0.7"/>
+  <text x="635" y="195" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Step 4</text>
+  <text x="635" y="220" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">運用・保守</text>
+
+  <!-- Description 4 -->
+  <rect x="560" y="270" width="130" height="100" rx="5" fill="#F3F4F6" stroke="#D1D5DB"/>
+  <text x="570" y="290" font-family="Arial, sans-serif" font-size="12" fill="#374151">
+    <tspan x="570" dy="0">・リリース</tspan>
+    <tspan x="570" dy="20">・モニタリング</tspan>
+    <tspan x="570" dy="20">・改善サイクル</tspan>
+  </text>
+
+</svg>

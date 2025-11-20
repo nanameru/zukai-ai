@@ -1,0 +1,63 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cycleGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cycleGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cycleGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cycleGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1F2937">PDCAサイクル (循環プロセス)</text>
+
+  <!-- Center Text -->
+  <circle cx="350" cy="270" r="50" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1" />
+  <text x="350" y="275" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#374151">改善</text>
+
+  <!-- Segments (Arcs) - Simplified representation with paths -->
+  <!-- Plan (Top Left) -->
+  <path d="M350 270 L350 120 A150 150 0 0 0 200 270 Z" fill="url(#cycleGrad1)" transform="translate(-5,-5)" filter="url(#shadow)"/>
+  <text x="280" y="210" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Plan</text>
+  <text x="280" y="230" font-family="Arial, sans-serif" font-size="12" fill="white">計画・目標設定</text>
+
+  <!-- Do (Top Right) -->
+  <path d="M350 270 L500 270 A150 150 0 0 0 350 120 Z" fill="url(#cycleGrad2)" transform="translate(5,-5)" filter="url(#shadow)"/>
+  <text x="420" y="210" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Do</text>
+  <text x="420" y="230" font-family="Arial, sans-serif" font-size="12" fill="white">実行・実施</text>
+
+  <!-- Check (Bottom Right) -->
+  <path d="M350 270 L350 420 A150 150 0 0 0 500 270 Z" fill="url(#cycleGrad3)" transform="translate(5,5)" filter="url(#shadow)"/>
+  <text x="420" y="330" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Check</text>
+  <text x="420" y="350" font-family="Arial, sans-serif" font-size="12" fill="white">評価・分析</text>
+
+  <!-- Action (Bottom Left) -->
+  <path d="M350 270 L200 270 A150 150 0 0 0 350 420 Z" fill="url(#cycleGrad4)" transform="translate(-5,5)" filter="url(#shadow)"/>
+  <text x="280" y="330" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Action</text>
+  <text x="280" y="350" font-family="Arial, sans-serif" font-size="12" fill="white">改善・処置</text>
+
+  <!-- Arrows connecting segments -->
+  <path d="M360 110 Q430 110 480 160" fill="none" stroke="#6B7280" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M510 280 Q510 350 460 400" fill="none" stroke="#6B7280" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M340 430 Q270 430 220 380" fill="none" stroke="#6B7280" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M190 260 Q190 190 240 140" fill="none" stroke="#6B7280" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6B7280" />
+    </marker>
+  </defs>
+</svg>
