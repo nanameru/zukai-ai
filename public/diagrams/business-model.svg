@@ -83,10 +83,10 @@
     <path d="M 400 190 L 400 250" />
     <path d="M 480 190 L 640 250" />
     
-    <!-- Middle to Bottom -->
-    <path d="M 160 370 L 160 400 L 300 420" stroke-dasharray="5,5" />
-    <path d="M 400 370 L 400 410" />
-    <path d="M 640 370 L 640 400 L 500 420" stroke-dasharray="5,5" />
+    <!-- Middle to Bottom (Manhattan style to avoid overlap and clutter) -->
+    <path d="M 160 370 L 160 395 L 300 395 L 300 413" stroke-dasharray="5,5" />
+    <path d="M 400 370 L 400 413" />
+    <path d="M 640 370 L 640 395 L 500 395 L 500 413" stroke-dasharray="5,5" />
   </g>
 
 </svg>
