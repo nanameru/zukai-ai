@@ -31,23 +31,23 @@
   <!-- Segments (Arcs) - Simplified representation with paths -->
   <!-- Plan (Top Left) -->
   <path d="M350 270 L350 120 A150 150 0 0 0 200 270 Z" fill="url(#cycleGrad1)" transform="translate(-5,-5)" filter="url(#shadow)"/>
-  <text x="280" y="210" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Plan</text>
-  <text x="280" y="230" font-family="Arial, sans-serif" font-size="12" fill="white">計画・目標設定</text>
+  <text x="280" y="210" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Plan</text>
+  <text x="280" y="230" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">計画・目標設定</text>
 
   <!-- Do (Top Right) -->
   <path d="M350 270 L500 270 A150 150 0 0 0 350 120 Z" fill="url(#cycleGrad2)" transform="translate(5,-5)" filter="url(#shadow)"/>
-  <text x="420" y="210" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Do</text>
-  <text x="420" y="230" font-family="Arial, sans-serif" font-size="12" fill="white">実行・実施</text>
+  <text x="420" y="210" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Do</text>
+  <text x="420" y="230" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">実行・実施</text>
 
   <!-- Check (Bottom Right) -->
   <path d="M350 270 L350 420 A150 150 0 0 0 500 270 Z" fill="url(#cycleGrad3)" transform="translate(5,5)" filter="url(#shadow)"/>
-  <text x="420" y="330" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Check</text>
-  <text x="420" y="350" font-family="Arial, sans-serif" font-size="12" fill="white">評価・分析</text>
+  <text x="420" y="330" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Check</text>
+  <text x="420" y="350" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">評価・分析</text>
 
   <!-- Action (Bottom Left) -->
   <path d="M350 270 L200 270 A150 150 0 0 0 350 420 Z" fill="url(#cycleGrad4)" transform="translate(-5,5)" filter="url(#shadow)"/>
-  <text x="280" y="330" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Action</text>
-  <text x="280" y="350" font-family="Arial, sans-serif" font-size="12" fill="white">改善・処置</text>
+  <text x="280" y="330" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Action</text>
+  <text x="280" y="350" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">改善・処置</text>
 
   <!-- Arrows connecting segments -->
   <path d="M360 110 Q430 110 480 160" fill="none" stroke="#6B7280" stroke-width="3" marker-end="url(#arrowhead)"/>
